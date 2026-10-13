@@ -1,0 +1,4 @@
+VINTRA_PARTITION_INTEGRATION_TB__main.o: \
+ VINTRA_PARTITION_INTEGRATION_TB__main.cpp \
+ /usr/share/verilator/include/verilated.h \
+ VINTRA_PARTITION_INTEGRATION_TB.h

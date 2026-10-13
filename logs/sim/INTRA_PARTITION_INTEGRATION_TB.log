@@ -1,0 +1,18 @@
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/INTRA_PARTITION_INTEGRATION_TB'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/INTRA_PARTITION_INTEGRATION_TB'
+[INFO] Running TC08; live_partition=0
+[INFO] CU_ID=1 COMP=0 16x16: 64 beats accepted
+[INFO] CU_ID=1 COMP=1 8x8: 16 beats accepted
+[INFO] CU_ID=1 COMP=2 8x8: 16 beats accepted
+[INFO] CU_ID=2 COMP=0 16x16: 64 beats accepted
+[INFO] CU_ID=2 COMP=1 8x8: 16 beats accepted
+[INFO] CU_ID=2 COMP=2 8x8: 16 beats accepted
+===========================================================
+[PASS] TC08 Partition/Intra Integration
+       Leaves=2 CU done=2 IntraSyntax=2 PartitionSyntax=0
+       Accepted beats Y=128 Cb=32 Cr=32
+       Stalls Y/Cb/Cr=0/0/0, stalled LAST=0/0/0
+       Chroma above reads=0; syntax FIFO full=0; commit=2
+===========================================================
+- ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_PARTITION_INTEGRATION_TB.sv:978: Verilog $finish

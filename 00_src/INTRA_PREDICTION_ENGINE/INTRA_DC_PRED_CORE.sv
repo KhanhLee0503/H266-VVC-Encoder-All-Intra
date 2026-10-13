@@ -1,34 +1,39 @@
 //-----------------------------------------------------------
 // Description: This module implements the VVC intra DC prediction core.
-// The core accepts up to 32 top and 32 left reference samples, masks the
-// unused lanes according to the transform-block geometry, calculates the
-// top and left sums with a three-stage elastic pipeline, and outputs the
-// 10-bit DC prediction value. The datapath follows the square, wide, and
-// tall DC equations and supports ready/valid backpressure.
+// The core directly accepts the 64-sample top and left unfiltered reference
+// arrays produced by the intra reference subsystem. Each stored reference
+// sample uses a container width that can be wider than the logical pixel
+// width. The core extracts the logical pixel bits from the low bits of each
+// container, masks the unused lanes according to the transform-block
+// geometry, calculates the top and left sums with a three-stage elastic
+// pipeline, and outputs the DC prediction value. Invalid TU size codes are
+// consumed without entering the prediction pipeline.
 //-----------------------------------------------------------
 `timescale 1ns/1ps
 
 module INTRA_DC_PRED_CORE #(
-  parameter PARA_PIXEL_WD = 10
+  parameter integer PARA_PIXEL_WD        = 10,
+  parameter integer PARA_CONTAINER_WD    = 16,
+  parameter integer PARA_REF_STORAGE_NUM = 64
 )(
-  input                                   I_CLK,
-  input                                   I_RESETN,
+  input                                                 I_CLK,
+  input                                                 I_RESETN,
 
-  input                                   I_VALID,
-  output logic                            O_READY,
+  input                                                 I_VALID,
+  output logic                                          O_READY,
 
-  input  [2:0]                            I_TU_WIDTH_CODE,
-  input  [2:0]                            I_TU_HEIGHT_CODE,
-  input  [(32*PARA_PIXEL_WD)-1:0]         I_TOP_REF,
-  input  [(32*PARA_PIXEL_WD)-1:0]         I_LEFT_REF,
+  input  [2:0]                                          I_TU_WIDTH_CODE,
+  input  [2:0]                                          I_TU_HEIGHT_CODE,
+  input  [(PARA_REF_STORAGE_NUM*PARA_CONTAINER_WD)-1:0] I_UNFILT_TOP_REF,
+  input  [(PARA_REF_STORAGE_NUM*PARA_CONTAINER_WD)-1:0] I_UNFILT_LEFT_REF,
 
-  output logic                            O_VALID,
-  input                                   I_READY,
-  output logic [PARA_PIXEL_WD-1:0]        O_DC_VAL
+  output logic                                          O_VALID,
+  input                                                 I_READY,
+  output logic [PARA_PIXEL_WD-1:0]                      O_DC_VAL
 );
 
-localparam PARA_REF_NUM = 32;
-localparam PARA_MASK_WD = 32;
+localparam integer PARA_DC_REF_NUM = 32;
+localparam integer PARA_MASK_WD = 32;
 localparam PARA_SIZE_WD = 6;
 localparam PARA_SHIFT_WD = 3;
 localparam PARA_ROUND_WD = 6;
@@ -36,6 +41,10 @@ localparam PARA_MUX_SEL_WD = 2;
 
 logic [PARA_MASK_WD-1:0]    w_top_size_mask;
 logic [PARA_MASK_WD-1:0]    w_left_size_mask;
+logic                       w_width_supported;
+logic                       w_height_supported;
+logic                       w_size_valid;
+logic                       w_input_valid;
 logic [PARA_MASK_WD-1:0]    w_top_lane_mask;
 logic [PARA_MASK_WD-1:0]    w_left_lane_mask;
 logic [PARA_SIZE_WD-1:0]    w_tu_width;
@@ -46,8 +55,8 @@ logic [PARA_MUX_SEL_WD-1:0] w_mux_sel;
 logic [PARA_ROUND_WD-1:0]   w_round_value;
 logic [PARA_SHIFT_WD-1:0]   w_shift_amount;
 
-logic [PARA_PIXEL_WD-1:0]   w_top_masked [0:PARA_REF_NUM-1];
-logic [PARA_PIXEL_WD-1:0]   w_left_masked [0:PARA_REF_NUM-1];
+logic [PARA_PIXEL_WD-1:0]   w_top_masked [0:PARA_DC_REF_NUM-1];
+logic [PARA_PIXEL_WD-1:0]   w_left_masked [0:PARA_DC_REF_NUM-1];
 logic [PARA_PIXEL_WD:0]     w_top_l1 [0:15];
 logic [PARA_PIXEL_WD:0]     w_left_l1 [0:15];
 logic [PARA_PIXEL_WD+1:0]   w_top_l2 [0:7];
@@ -96,6 +105,7 @@ genvar gen_l4;
 always_comb begin
   w_top_size_mask = '0;
   w_tu_width = '0;
+  w_width_supported = 1'b1;
 
   unique casez (I_TU_WIDTH_CODE)
     3'd2: begin
@@ -117,6 +127,7 @@ always_comb begin
     default: begin
       w_top_size_mask = '0;
       w_tu_width = '0;
+      w_width_supported = 1'b0;
     end
   endcase
 end
@@ -125,6 +136,7 @@ end
 always_comb begin
   w_left_size_mask = '0;
   w_tu_height = '0;
+  w_height_supported = 1'b1;
 
   unique casez (I_TU_HEIGHT_CODE)
     3'd2: begin
@@ -146,9 +158,18 @@ always_comb begin
     default: begin
       w_left_size_mask = '0;
       w_tu_height = '0;
+      w_height_supported = 1'b0;
     end
   endcase
 end
+
+assign w_size_valid =
+  w_width_supported &&
+  w_height_supported;
+
+assign w_input_valid =
+  I_VALID &&
+  w_size_valid;
 
 // Select the DC equation and generate the rounding and shift controls.
 always_comb begin
@@ -158,35 +179,37 @@ always_comb begin
   w_round_value = '0;
   w_shift_amount = '0;
 
-  if (I_TU_WIDTH_CODE == I_TU_HEIGHT_CODE) begin
-    w_top_tree_enable = 1'b1;
-    w_left_tree_enable = 1'b1;
-    w_mux_sel = 2'b00;
-    w_round_value = w_tu_width;
-    w_shift_amount = I_TU_WIDTH_CODE + 3'd1;
-  end
-  else if (I_TU_WIDTH_CODE > I_TU_HEIGHT_CODE) begin
-    w_top_tree_enable = 1'b1;
-    w_left_tree_enable = 1'b0;
-    w_mux_sel = 2'b01;
-    w_round_value = w_tu_width >> 1;
-    w_shift_amount = I_TU_WIDTH_CODE;
-  end
-  else begin
-    w_top_tree_enable = 1'b0;
-    w_left_tree_enable = 1'b1;
-    w_mux_sel = 2'b10;
-    w_round_value = w_tu_height >> 1;
-    w_shift_amount = I_TU_HEIGHT_CODE;
+  if (w_size_valid) begin
+    if (I_TU_WIDTH_CODE == I_TU_HEIGHT_CODE) begin
+      w_top_tree_enable = 1'b1;
+      w_left_tree_enable = 1'b1;
+      w_mux_sel = 2'b00;
+      w_round_value = w_tu_width;
+      w_shift_amount = I_TU_WIDTH_CODE + 3'd1;
+    end
+    else if (I_TU_WIDTH_CODE > I_TU_HEIGHT_CODE) begin
+      w_top_tree_enable = 1'b1;
+      w_left_tree_enable = 1'b0;
+      w_mux_sel = 2'b01;
+      w_round_value = w_tu_width >> 1;
+      w_shift_amount = I_TU_WIDTH_CODE;
+    end
+    else begin
+      w_top_tree_enable = 1'b0;
+      w_left_tree_enable = 1'b1;
+      w_mux_sel = 2'b10;
+      w_round_value = w_tu_height >> 1;
+      w_shift_amount = I_TU_HEIGHT_CODE;
+    end
   end
 end
 
 // Operand gating forces unused tree inputs to zero and reduces switching.
 assign w_top_lane_mask =
-  (I_VALID && w_top_tree_enable) ? w_top_size_mask : '0;
+  (w_input_valid && w_top_tree_enable) ? w_top_size_mask : '0;
 
 assign w_left_lane_mask =
-  (I_VALID && w_left_tree_enable) ? w_left_size_mask : '0;
+  (w_input_valid && w_left_tree_enable) ? w_left_size_mask : '0;
 
 // Backpressure propagates from the output register toward the input.
 assign w_stage3_ready = !r_stage3_valid || I_READY;
@@ -198,15 +221,19 @@ assign O_VALID = r_stage3_valid;
 assign O_DC_VAL = r_dc_value;
 
 generate
-  for (gen_input = 0; gen_input < PARA_REF_NUM; gen_input = gen_input + 1) begin: GEN_INPUT_MASK
+  for (gen_input = 0; gen_input < PARA_DC_REF_NUM; gen_input = gen_input + 1) begin: GEN_INPUT_MASK
     assign w_top_masked[gen_input] =
       w_top_lane_mask[gen_input] ?
-      I_TOP_REF[(gen_input*PARA_PIXEL_WD) +: PARA_PIXEL_WD] :
+      I_UNFILT_TOP_REF[
+        (gen_input*PARA_CONTAINER_WD) +: PARA_PIXEL_WD
+      ] :
       {PARA_PIXEL_WD{1'b0}};
 
     assign w_left_masked[gen_input] =
       w_left_lane_mask[gen_input] ?
-      I_LEFT_REF[(gen_input*PARA_PIXEL_WD) +: PARA_PIXEL_WD] :
+      I_UNFILT_LEFT_REF[
+        (gen_input*PARA_CONTAINER_WD) +: PARA_PIXEL_WD
+      ] :
       {PARA_PIXEL_WD{1'b0}};
   end
 endgenerate
@@ -241,14 +268,14 @@ always_ff @ (posedge I_CLK, negedge I_RESETN) begin
   if (!I_RESETN)
     r_stage1_valid <= 1'b0;
   else if (w_stage1_ready)
-    r_stage1_valid <= I_VALID;
+    r_stage1_valid <= w_input_valid;
 end
 
 // The first-stage datapath registers do not require reset because valid qualifies them.
 generate
   for (gen_stage1_reg = 0; gen_stage1_reg < 8; gen_stage1_reg = gen_stage1_reg + 1) begin: GEN_STAGE1_REG
     always_ff @ (posedge I_CLK) begin
-      if (w_stage1_ready && I_VALID) begin
+      if (w_stage1_ready && w_input_valid) begin
         r_top_l2[gen_stage1_reg] <= w_top_l2[gen_stage1_reg];
         r_left_l2[gen_stage1_reg] <= w_left_l2[gen_stage1_reg];
       end
@@ -257,7 +284,7 @@ generate
 endgenerate
 
 always_ff @ (posedge I_CLK) begin
-  if (w_stage1_ready && I_VALID) begin
+  if (w_stage1_ready && w_input_valid) begin
     r_stage1_mux_sel <= w_mux_sel;
     r_stage1_round_value <= w_round_value;
     r_stage1_shift_amount <= w_shift_amount;

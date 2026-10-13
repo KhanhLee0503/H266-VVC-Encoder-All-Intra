@@ -1,57 +1,80 @@
 //-----------------------------------------------------------
 // Description: This module implements the VVC intra Planar prediction core.
-// The core accepts one transform block at a time and generates four base
-// Planar prediction samples per cycle in raster-scan order. The reference
-// samples are selected before this module, so this core does not choose
-// between filtered and unfiltered references. Four parallel prediction
-// lanes use a four-stage elastic pipeline and support ready/valid
-// backpressure at the output interface.
+// The core accepts one transform block at a time and generates four Planar
+// prediction samples per cycle in raster-scan order. It directly accepts the
+// filtered and unfiltered reference arrays produced by the intra reference
+// subsystem. For the project baseline, Planar uses filtered references only
+// for luma transform blocks with area greater than 32 samples; otherwise it
+// uses unfiltered references. Reference samples are stored in wider
+// containers and the logical pixel bits are extracted before the existing
+// four-stage elastic Planar datapath. Unsupported TU size codes are not
+// accepted, and output ready/valid backpressure is preserved.
 //-----------------------------------------------------------
 `timescale 1ns/1ps
 
 module INTRA_PLANAR_PRED_CORE #(
-  parameter PARA_PIXEL_WD = 10,
-  parameter PARA_LANE_NUM = 4
+  parameter integer PARA_PIXEL_WD        = 10,
+  parameter integer PARA_CONTAINER_WD    = 16,
+  parameter integer PARA_REF_STORAGE_NUM = 64,
+  parameter integer PARA_LANE_NUM        = 4
 )(
-  input                                            I_CLK,
-  input                                            I_RESETN,
+  input                                                 I_CLK,
+  input                                                 I_RESETN,
 
-  input                                            I_VALID,
-  output logic                                     O_READY,
+  input                                                 I_VALID,
+  output logic                                          O_READY,
 
-  input  [2:0]                                     I_TU_WIDTH_CODE,
-  input  [2:0]                                     I_TU_HEIGHT_CODE,
-  input  [(33*PARA_PIXEL_WD)-1:0]                  I_TOP_REF,
-  input  [(33*PARA_PIXEL_WD)-1:0]                  I_LEFT_REF,
+  input  [2:0]                                          I_TU_WIDTH_CODE,
+  input  [2:0]                                          I_TU_HEIGHT_CODE,
+  input  [1:0]                                          I_COMPONENT_ID,
 
-  output logic                                     O_VALID,
-  input                                            I_READY,
-  output logic [(PARA_LANE_NUM*PARA_PIXEL_WD)-1:0] O_PRED_SAMPLE,
-  output logic [PARA_LANE_NUM-1:0]                 O_LANE_VALID,
-  output logic [4:0]                               O_X_BASE,
-  output logic [4:0]                               O_Y,
-  output logic                                     O_LAST
+  input  [(PARA_REF_STORAGE_NUM*PARA_CONTAINER_WD)-1:0] I_UNFILT_TOP_REF,
+  input  [(PARA_REF_STORAGE_NUM*PARA_CONTAINER_WD)-1:0] I_UNFILT_LEFT_REF,
+
+  input                                                 I_FILTERED_VALID,
+  input  [(PARA_REF_STORAGE_NUM*PARA_CONTAINER_WD)-1:0] I_FILTERED_TOP_REF,
+  input  [(PARA_REF_STORAGE_NUM*PARA_CONTAINER_WD)-1:0] I_FILTERED_LEFT_REF,
+
+  output logic                                          O_VALID,
+  input                                                 I_READY,
+  output logic [(PARA_LANE_NUM*PARA_PIXEL_WD)-1:0]      O_PRED_SAMPLE,
+  output logic [PARA_LANE_NUM-1:0]                      O_LANE_VALID,
+  output logic [4:0]                                    O_X_BASE,
+  output logic [4:0]                                    O_Y,
+  output logic                                          O_LAST
 );
 
-localparam PARA_REF_NUM          = 33;
-localparam PARA_COORD_WD         = 6;
-localparam PARA_MAX_SHIFT        = 5;
-localparam PARA_COORD_EXT_WD     = PARA_COORD_WD + 1;
-localparam PARA_DELTA_WD         = PARA_PIXEL_WD + 1;
-localparam PARA_WEIGHT_WD        = PARA_COORD_WD;
-localparam PARA_WEIGHT_SIGNED_WD = PARA_WEIGHT_WD + 1;
-localparam PARA_MULT_WD          = PARA_DELTA_WD + PARA_WEIGHT_SIGNED_WD;
-localparam PARA_BASE_WD          = PARA_MULT_WD + 1;
-localparam PARA_PART_WD          = PARA_BASE_WD + PARA_MAX_SHIFT;
-localparam PARA_NUM_WD           = PARA_PART_WD + 2;
-localparam PARA_FINAL_SHIFT_WD   = 4;
+localparam integer PARA_PLANAR_REF_NUM     = 33;
+localparam integer PARA_COORD_WD           = 6;
+localparam integer PARA_MAX_SHIFT          = 5;
+localparam integer PARA_COORD_EXT_WD       = PARA_COORD_WD + 1;
+localparam integer PARA_DELTA_WD           = PARA_PIXEL_WD + 1;
+localparam integer PARA_WEIGHT_WD          = PARA_COORD_WD;
+localparam integer PARA_WEIGHT_SIGNED_WD   = PARA_WEIGHT_WD + 1;
+localparam integer PARA_MULT_WD            = PARA_DELTA_WD + PARA_WEIGHT_SIGNED_WD;
+localparam integer PARA_BASE_WD            = PARA_MULT_WD + 1;
+localparam integer PARA_PART_WD            = PARA_BASE_WD + PARA_MAX_SHIFT;
+localparam integer PARA_NUM_WD             = PARA_PART_WD + 2;
+localparam integer PARA_FINAL_SHIFT_WD     = 4;
+
+localparam [1:0] PARA_COMPONENT_Y = 2'b00;
 
 logic [PARA_COORD_WD-1:0] w_input_width;
 logic [PARA_COORD_WD-1:0] w_input_height;
+logic                      w_width_supported;
+logic                      w_height_supported;
+logic                      w_size_valid;
+logic [3:0]                w_size_code_sum;
+logic                      w_filter_required;
+logic                      w_reference_ready;
+logic                      w_use_filtered;
 logic                      w_input_accept;
 
-logic [(PARA_REF_NUM*PARA_PIXEL_WD)-1:0] r_top_ref;
-logic [(PARA_REF_NUM*PARA_PIXEL_WD)-1:0] r_left_ref;
+logic [(PARA_PLANAR_REF_NUM*PARA_PIXEL_WD)-1:0] w_selected_top_ref;
+logic [(PARA_PLANAR_REF_NUM*PARA_PIXEL_WD)-1:0] w_selected_left_ref;
+
+logic [(PARA_PLANAR_REF_NUM*PARA_PIXEL_WD)-1:0] r_top_ref;
+logic [(PARA_PLANAR_REF_NUM*PARA_PIXEL_WD)-1:0] r_left_ref;
 logic [2:0]                               r_width_code;
 logic [2:0]                               r_height_code;
 logic [PARA_COORD_WD-1:0]                r_width;
@@ -152,6 +175,7 @@ logic w_stage2_ready;
 logic w_stage3_ready;
 logic w_stage4_ready;
 
+genvar gen_ref;
 genvar gen_lane;
 genvar gen_stage1_reg;
 genvar gen_stage2_reg;
@@ -162,6 +186,7 @@ genvar gen_output;
 // Decode the transform-block width into the numeric sample count.
 always_comb begin
   w_input_width = '0;
+  w_width_supported = 1'b1;
 
   unique casez (I_TU_WIDTH_CODE)
     3'd2: begin
@@ -178,6 +203,7 @@ always_comb begin
     end
     default: begin
       w_input_width = '0;
+      w_width_supported = 1'b0;
     end
   endcase
 end
@@ -185,6 +211,7 @@ end
 // Decode the transform-block height into the numeric sample count.
 always_comb begin
   w_input_height = '0;
+  w_height_supported = 1'b1;
 
   unique casez (I_TU_HEIGHT_CODE)
     3'd2: begin
@@ -201,9 +228,62 @@ always_comb begin
     end
     default: begin
       w_input_height = '0;
+      w_height_supported = 1'b0;
     end
   endcase
 end
+
+assign w_size_valid =
+  w_width_supported &&
+  w_height_supported;
+
+assign w_size_code_sum =
+  {1'b0, I_TU_WIDTH_CODE} +
+  {1'b0, I_TU_HEIGHT_CODE};
+
+// For the current project baseline, Planar has refFilterFlag equal to one,
+// MRL is disabled, and ISP is disabled. Therefore filtered references are
+// required only for luma transform blocks whose area is greater than 32.
+assign w_filter_required =
+  w_size_valid &&
+  (I_COMPONENT_ID == PARA_COMPONENT_Y) &&
+  (w_size_code_sum > 4'd5);
+
+assign w_reference_ready =
+  !w_filter_required ||
+  I_FILTERED_VALID;
+
+assign w_use_filtered =
+  w_filter_required &&
+  I_FILTERED_VALID;
+
+// Planar only needs Top[0..W] and Left[0..H]. With the maximum supported
+// transform size of 32, the first 33 reference samples are sufficient.
+generate
+  for (gen_ref = 0; gen_ref < PARA_PLANAR_REF_NUM; gen_ref = gen_ref + 1) begin: GEN_REF_SELECT
+    assign w_selected_top_ref[
+      (gen_ref*PARA_PIXEL_WD) +: PARA_PIXEL_WD
+    ] =
+      w_use_filtered
+      ? I_FILTERED_TOP_REF[
+          (gen_ref*PARA_CONTAINER_WD) +: PARA_PIXEL_WD
+        ]
+      : I_UNFILT_TOP_REF[
+          (gen_ref*PARA_CONTAINER_WD) +: PARA_PIXEL_WD
+        ];
+
+    assign w_selected_left_ref[
+      (gen_ref*PARA_PIXEL_WD) +: PARA_PIXEL_WD
+    ] =
+      w_use_filtered
+      ? I_FILTERED_LEFT_REF[
+          (gen_ref*PARA_CONTAINER_WD) +: PARA_PIXEL_WD
+        ]
+      : I_UNFILT_LEFT_REF[
+          (gen_ref*PARA_CONTAINER_WD) +: PARA_PIXEL_WD
+        ];
+  end
+endgenerate
 
 // Backpressure propagates from the output register toward the first pipeline stage.
 assign w_stage4_ready = !r_stage4_valid || I_READY;
@@ -217,9 +297,13 @@ assign O_READY =
   !r_stage1_valid &&
   !r_stage2_valid &&
   !r_stage3_valid &&
-  !r_stage4_valid;
+  !r_stage4_valid &&
+  w_size_valid &&
+  w_reference_ready;
 
-assign w_input_accept = I_VALID && O_READY;
+assign w_input_accept =
+  I_VALID &&
+  O_READY;
 assign w_issue_fire = r_issue_active && w_stage1_ready;
 
 // The raster controller advances four horizontal samples for every issued group.
@@ -237,8 +321,8 @@ assign O_LAST = r_stage4_last;
 // The reference buffer and transform-block geometry are captured for one block transaction.
 always_ff @ (posedge I_CLK) begin
   if (w_input_accept) begin
-    r_top_ref <= I_TOP_REF;
-    r_left_ref <= I_LEFT_REF;
+    r_top_ref <= w_selected_top_ref;
+    r_left_ref <= w_selected_left_ref;
     r_width_code <= I_TU_WIDTH_CODE;
     r_height_code <= I_TU_HEIGHT_CODE;
     r_width <= w_input_width;

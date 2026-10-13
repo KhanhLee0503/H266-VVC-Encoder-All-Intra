@@ -1,0 +1,4 @@
+VTQ_DST7_DCT8_CORE_TB___024root__DepSet_hb5c94abe__0.o: \
+ VTQ_DST7_DCT8_CORE_TB___024root__DepSet_hb5c94abe__0.cpp \
+ VTQ_DST7_DCT8_CORE_TB__pch.h VTQ_DST7_DCT8_CORE_TB__Syms.h \
+ VTQ_DST7_DCT8_CORE_TB___024root.h

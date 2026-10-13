@@ -5,9 +5,9 @@
 // feature banks. The control FSM then traverses the coding tree with
 // a DFS node stack, scans the feature banks for each node, classifies
 // activity and direction, selects a legal split, generates children,
-// and writes leaf-CU and semantic syntax streams. The Leaf-CU
-// stream is safely forked to the external Leaf-CU consumer and to
-// the deterministic transform-tree generator.
+// and writes Leaf-CU and semantic syntax streams. The Leaf FIFO is
+// the only CU geometry output source and is connected directly to the
+// external Intra Prediction consumer with ready/valid handshaking.
 //
 // Project baseline:
 // - 128x128 luma CTU.
@@ -16,7 +16,9 @@
 // - Feature map: 32x32 4x4 tiles.
 // - Feature banks: even tile_x in bank A, odd tile_x in bank B.
 // - Activity thresholds are generated internally from QP + node size.
-// - Transform tree: ISP disabled, SBT disabled, MaxTbSizeY = 32.
+// - Maximum Leaf CU = 32x32. No TU generator or TU descriptor stream.
+// - ISP and SBT are disabled; downstream uses Leaf CU geometry directly.
+// - Activity/direction summaries are stored with each Leaf CU.
 // - Only synthesizable RTL constructs are used.
 //-----------------------------------------------------------
 
@@ -32,7 +34,6 @@ module PARTITION_ENGINE
   parameter PARA_STACK_DEPTH         = 64,
   parameter PARA_LEAF_FIFO_DEPTH     = 256,
   parameter PARA_SYNTAX_FIFO_DEPTH   = 256,
-  parameter PARA_TU_STACK_DEPTH      = 8,
 
   parameter PARA_MIN_QT_SIZE         = 8,
   parameter PARA_MIN_BT_SIZE         = 8,
@@ -40,6 +41,7 @@ module PARTITION_ENGINE
   parameter PARA_MIN_TT_SIZE         = 8,
   parameter PARA_MAX_TT_SIZE         = 64,
   parameter PARA_MAX_MTT_DEPTH       = 4,
+  parameter PARA_MAX_LEAF_SIZE       = 32,
   parameter PARA_ENABLE_TT           = 1,
 
   parameter PARA_USE_VARIANCE        = 0,
@@ -59,7 +61,7 @@ module PARTITION_ENGINE
   localparam PARA_DV_WD              = 23,
   localparam PARA_IDTV_WD            = 25,
   localparam PARA_VAR_WD             = 48,
-  localparam PARA_TU_DESC_WD         = 41,
+  localparam PARA_FEATURE_SUMMARY_WD = 10,
 
   localparam PARA_STACK_COUNT_WD =
     (PARA_STACK_DEPTH < 1) ? 1 :
@@ -71,11 +73,7 @@ module PARTITION_ENGINE
 
   localparam PARA_SYNTAX_COUNT_WD =
     (PARA_SYNTAX_FIFO_DEPTH < 1) ? 1 :
-    $clog2(PARA_SYNTAX_FIFO_DEPTH + 1),
-
-  localparam PARA_TU_STACK_COUNT_WD =
-    (PARA_TU_STACK_DEPTH < 1) ? 1 :
-    $clog2(PARA_TU_STACK_DEPTH + 1)
+    $clog2(PARA_SYNTAX_FIFO_DEPTH + 1)
 )
 (
   input                                   I_CLK,
@@ -101,17 +99,23 @@ module PARTITION_ENGINE
   input                                   I_CTU_RD_VALID,
   input      [PARA_CTU_RD_DATA_WD-1:0]    I_CTU_RD_DATA,
 
-  // Leaf-CU output stream.
+  // Leaf-CU output stream for CU-level Intra Prediction.
+  // Final Leaf geometry uses Partition size codes 1..3:
+  //   1->8, 2->16, 3->32.
   output logic                            O_LEAF_VALID,
   input                                   I_LEAF_READY,
   output logic [PARA_CTU_ID_WD-1:0]       O_LEAF_CTU_ID,
   output logic [PARA_CU_ID_WD-1:0]        O_LEAF_CU_ID,
   output logic [PARA_NODE_WD-1:0]         O_LEAF_NODE_DATA,
-
-  // Final transform-unit output stream.
-  output logic                            O_TU_VALID,
-  input                                   I_TU_READY,
-  output logic [PARA_TU_DESC_WD-1:0]      O_TU_DESCRIPTOR,
+  output logic [4:0]                      O_LEAF_X_UNIT,
+  output logic [4:0]                      O_LEAF_Y_UNIT,
+  output logic [2:0]                      O_LEAF_WIDTH_CODE,
+  output logic [2:0]                      O_LEAF_HEIGHT_CODE,
+  output logic [1:0]                      O_LEAF_ACTIVITY,
+  output logic                            O_LEAF_DOMINANT,
+  output logic                            O_LEAF_STRONG_DOMINANT,
+  output logic [2:0]                      O_LEAF_DIRECTION,
+  output logic [2:0]                      O_LEAF_SECOND_DIRECTION,
 
   // Semantic partition-syntax output stream.
   output logic                            O_SYNTAX_VALID,
@@ -356,37 +360,15 @@ logic                         w_leaf_wr_valid;
 logic                         w_leaf_wr_ready;
 logic [PARA_CU_ID_WD-1:0]     w_leaf_wr_cu_id;
 logic [PARA_NODE_WD-1:0]      w_leaf_wr_node_data;
+logic [PARA_FEATURE_SUMMARY_WD-1:0] r_leaf_feature_summary;
 
 logic                         w_leaf_rd_valid;
 logic [PARA_CU_ID_WD-1:0]     w_leaf_rd_cu_id;
 logic [PARA_NODE_WD-1:0]      w_leaf_rd_node_data;
+logic [PARA_FEATURE_SUMMARY_WD-1:0] w_leaf_rd_feature_summary;
 logic                         w_leaf_empty;
 logic                         w_leaf_full;
 logic [PARA_LEAF_COUNT_WD-1:0] w_leaf_fifo_count;
-
-// Leaf-stream fork state. A Leaf FIFO entry is removed only after the
-// external Leaf-CU consumer and the transform-tree generator have
-// each accepted the current Leaf CU exactly once.
-logic                         r_leaf_external_sent;
-logic                         r_leaf_tu_sent;
-logic                         w_leaf_external_valid;
-logic                         w_leaf_tu_valid;
-logic                         w_leaf_external_accept;
-logic                         w_leaf_tu_accept;
-logic                         w_leaf_complete;
-logic                         w_leaf_fifo_rd_ready;
-
-//-----------------------------------------------------------
-// Transform-tree / TU generator.
-//-----------------------------------------------------------
-
-logic                         w_tu_cu_ready;
-logic                         w_tu_valid;
-logic [PARA_TU_DESC_WD-1:0]   w_tu_descriptor;
-logic                         w_tu_busy;
-logic                         w_tu_done;
-logic                         w_tu_error;
-logic [PARA_TU_STACK_COUNT_WD-1:0] w_tu_stack_count;
 
 //-----------------------------------------------------------
 // Syntax FIFO.
@@ -439,36 +421,57 @@ logic [2:0]                   w_fsm_selected_split_type;
 logic [8:0]                   w_fsm_leaf_count;
 logic [11:0]                  w_fsm_next_node_id;
 
-logic                         w_fsm_start;
-logic                         w_fsm_done_ack;
 logic                         w_engine_done;
+
+//-----------------------------------------------------------
+// Leaf feature-summary capture.
+//
+// Feature-summary layout:
+//   [9:8] ACTIVITY
+//   [7]   DOMINANT
+//   [6]   STRONG_DOMINANT
+//   [5:3] DIRECTION
+//   [2:0] SECOND_DIRECTION
+//
+// The activity/direction classifiers and direct split decision are
+// combinational in ST_DECIDE. The summary is therefore captured with
+// the accepted decision and kept stable until a leaf entry is written.
+// Split-node summaries may be captured as well, but only the summary
+// associated with a leaf decision is committed into the Leaf FIFO.
+//-----------------------------------------------------------
+
+always_ff @ (posedge I_CLK, negedge I_RESETN) begin
+  if (!I_RESETN)
+    r_leaf_feature_summary <= '0;
+  else if (w_leaf_clear)
+    r_leaf_feature_summary <= '0;
+  else if (w_decision_valid && w_activity_valid && w_direction_valid)
+    r_leaf_feature_summary <= {
+      w_activity,
+      w_dominant,
+      w_strong_dominant,
+      w_direction,
+      w_second_direction
+    };
+end
 
 //-----------------------------------------------------------
 // Top-level transaction glue.
 //-----------------------------------------------------------
 
-assign w_fsm_start =
-  I_START &&
-  !w_tu_busy &&
-  !w_tu_error;
-
 assign w_start_fire =
-  w_fsm_start &&
+  I_START &&
   w_fsm_start_ready;
 
 assign w_meta_load = w_start_fire;
 
-// Keep the coding-tree FSM in ST_DONE until the final Leaf CU has
-// been accepted by both fork branches and the TU generator is idle.
+// The control FSM enters ST_DONE when all tree nodes have been
+// traversed. Top-level completion additionally requires that Intra
+// has consumed every Leaf CU from the output FIFO. This does not
+// imply downstream Intra/Reconstruction/Reference completion.
 assign w_engine_done =
   w_fsm_done &&
-  w_leaf_empty &&
-  !w_tu_busy &&
-  !w_tu_error;
-
-assign w_fsm_done_ack =
-  I_DONE_ACK &&
-  w_engine_done;
+  w_leaf_empty;
 
 // Metadata remains valid throughout one CTU transaction. It is only
 // cleared when the error state is explicitly acknowledged.
@@ -553,76 +556,26 @@ assign w_decision_input_valid =
   w_direction_valid;
 
 //-----------------------------------------------------------
-// Leaf-stream fork.
-//
-// The Leaf FIFO output register is the shared storage element. The
-// two consumers are allowed to accept the leaf in different cycles.
-// Once a branch accepts the leaf, its local sent flag suppresses a
-// second acceptance until the other branch also completes.
-//-----------------------------------------------------------
-
-assign w_leaf_external_valid =
-  w_leaf_rd_valid &&
-  !r_leaf_external_sent;
-
-assign w_leaf_tu_valid =
-  w_leaf_rd_valid &&
-  !r_leaf_tu_sent;
-
-assign w_leaf_external_accept =
-  w_leaf_external_valid &&
-  I_LEAF_READY;
-
-assign w_leaf_tu_accept =
-  w_leaf_tu_valid &&
-  w_tu_cu_ready;
-
-assign w_leaf_complete =
-  w_leaf_rd_valid &&
-  (r_leaf_external_sent || w_leaf_external_accept) &&
-  (r_leaf_tu_sent || w_leaf_tu_accept);
-
-assign w_leaf_fifo_rd_ready =
-  w_leaf_complete;
-
-always_ff @ (posedge I_CLK, negedge I_RESETN) begin
-  if (!I_RESETN) begin
-    r_leaf_external_sent <= 1'b0;
-    r_leaf_tu_sent       <= 1'b0;
-  end
-  else if (w_leaf_clear) begin
-    r_leaf_external_sent <= 1'b0;
-    r_leaf_tu_sent       <= 1'b0;
-  end
-  else if (w_leaf_complete) begin
-    r_leaf_external_sent <= 1'b0;
-    r_leaf_tu_sent       <= 1'b0;
-  end
-  else begin
-    if (w_leaf_external_accept)
-      r_leaf_external_sent <= 1'b1;
-
-    if (w_leaf_tu_accept)
-      r_leaf_tu_sent <= 1'b1;
-  end
-end
-
-//-----------------------------------------------------------
 // External output assignments.
 //-----------------------------------------------------------
 
-assign O_START_READY =
-  w_fsm_start_ready &&
-  !w_tu_busy &&
-  !w_tu_error;
+assign O_START_READY = w_fsm_start_ready;
 
-assign O_LEAF_VALID     = w_leaf_external_valid;
-assign O_LEAF_CTU_ID    = w_meta_ctu_id;
-assign O_LEAF_CU_ID     = w_leaf_rd_cu_id;
-assign O_LEAF_NODE_DATA = w_leaf_rd_node_data;
-
-assign O_TU_VALID      = w_tu_valid;
-assign O_TU_DESCRIPTOR = w_tu_descriptor;
+// A Leaf CU is accepted exactly once on O_LEAF_VALID && I_LEAF_READY.
+// The Leaf FIFO holds its payload stable while I_LEAF_READY is low.
+assign O_LEAF_VALID             = w_leaf_rd_valid;
+assign O_LEAF_CTU_ID            = w_meta_ctu_id;
+assign O_LEAF_CU_ID             = w_leaf_rd_cu_id;
+assign O_LEAF_NODE_DATA         = w_leaf_rd_node_data;
+assign O_LEAF_X_UNIT            = w_leaf_rd_node_data[52:48];
+assign O_LEAF_Y_UNIT            = w_leaf_rd_node_data[47:43];
+assign O_LEAF_WIDTH_CODE        = w_leaf_rd_node_data[42:40];
+assign O_LEAF_HEIGHT_CODE       = w_leaf_rd_node_data[39:37];
+assign O_LEAF_ACTIVITY          = w_leaf_rd_feature_summary[9:8];
+assign O_LEAF_DOMINANT          = w_leaf_rd_feature_summary[7];
+assign O_LEAF_STRONG_DOMINANT   = w_leaf_rd_feature_summary[6];
+assign O_LEAF_DIRECTION         = w_leaf_rd_feature_summary[5:3];
+assign O_LEAF_SECOND_DIRECTION  = w_leaf_rd_feature_summary[2:0];
 
 assign O_SYNTAX_VALID       = w_syntax_rd_valid;
 assign O_SYNTAX_CTU_ID      = w_syntax_rd_ctu_id;
@@ -640,11 +593,10 @@ assign O_SYNTAX_CU_ID       = w_syntax_rd_cu_id;
 
 assign O_BUSY =
   w_fsm_busy ||
-  w_tu_busy ||
   (w_fsm_done && !w_engine_done);
 
 assign O_DONE  = w_engine_done;
-assign O_ERROR = w_fsm_error || w_tu_error;
+assign O_ERROR = w_fsm_error;
 assign O_FEATURE_READY      = w_meta_feature_ready;
 assign O_CURRENT_LEGAL_MASK = w_legal_mask;
 assign O_CURRENT_SPLIT_TYPE = w_fsm_selected_split_type;
@@ -886,6 +838,7 @@ PARTITION_CONSTRAINT_CHECKER
   .PARA_MIN_TT_SIZE   (PARA_MIN_TT_SIZE),
   .PARA_MAX_TT_SIZE   (PARA_MAX_TT_SIZE),
   .PARA_MAX_MTT_DEPTH (PARA_MAX_MTT_DEPTH),
+  .PARA_MAX_LEAF_SIZE (PARA_MAX_LEAF_SIZE),
   .PARA_ENABLE_TT     (PARA_ENABLE_TT)
 )
 U_CONSTRAINT_CHECKER
@@ -1067,9 +1020,10 @@ U_CTU_CHILD_NODE_GENERATOR
 
 PARTITION_CTU_CU_LEAF_FIFO
 #(
-  .PARA_CU_ID_WD (PARA_CU_ID_WD),
-  .PARA_NODE_WD  (PARA_NODE_WD),
-  .PARA_DEPTH    (PARA_LEAF_FIFO_DEPTH)
+  .PARA_CU_ID_WD           (PARA_CU_ID_WD),
+  .PARA_NODE_WD            (PARA_NODE_WD),
+  .PARA_FEATURE_SUMMARY_WD (PARA_FEATURE_SUMMARY_WD),
+  .PARA_DEPTH              (PARA_LEAF_FIFO_DEPTH)
 )
 U_CTU_CU_LEAF_FIFO
 (
@@ -1079,51 +1033,19 @@ U_CTU_CU_LEAF_FIFO
 
   .I_WR_VALID   (w_leaf_wr_valid),
   .O_WR_READY   (w_leaf_wr_ready),
-  .I_CU_ID      (w_leaf_wr_cu_id),
-  .I_NODE_DATA  (w_leaf_wr_node_data),
+  .I_CU_ID           (w_leaf_wr_cu_id),
+  .I_NODE_DATA       (w_leaf_wr_node_data),
+  .I_FEATURE_SUMMARY (r_leaf_feature_summary),
 
-  .O_RD_VALID   (w_leaf_rd_valid),
-  .I_RD_READY   (w_leaf_fifo_rd_ready),
-  .O_CU_ID      (w_leaf_rd_cu_id),
-  .O_NODE_DATA  (w_leaf_rd_node_data),
+  .O_RD_VALID        (w_leaf_rd_valid),
+  .I_RD_READY        (I_LEAF_READY),
+  .O_CU_ID           (w_leaf_rd_cu_id),
+  .O_NODE_DATA       (w_leaf_rd_node_data),
+  .O_FEATURE_SUMMARY (w_leaf_rd_feature_summary),
 
   .O_EMPTY      (w_leaf_empty),
   .O_FULL       (w_leaf_full),
   .O_COUNT      (w_leaf_fifo_count)
-);
-
-//-----------------------------------------------------------
-// Transform-tree / TU generator.
-//-----------------------------------------------------------
-
-PARTITION_TRANSFORM_TREE_GENERATOR
-#(
-  .PARA_CTU_ID_WD   (PARA_CTU_ID_WD),
-  .PARA_CU_ID_WD    (PARA_CU_ID_WD),
-  .PARA_CU_NODE_WD  (PARA_NODE_WD),
-  .PARA_STACK_DEPTH (PARA_TU_STACK_DEPTH)
-)
-U_TRANSFORM_TREE_GENERATOR
-(
-  .I_CLK           (I_CLK),
-  .I_RESETN        (I_RESETN),
-
-  .I_CU_VALID      (w_leaf_tu_valid),
-  .O_CU_READY      (w_tu_cu_ready),
-
-  .I_CTU_ID        (w_meta_ctu_id),
-  .I_CU_ID         (w_leaf_rd_cu_id),
-  .I_CU_NODE_DATA  (w_leaf_rd_node_data),
-
-  .O_TU_VALID      (w_tu_valid),
-  .I_TU_READY      (I_TU_READY),
-  .O_TU_DESCRIPTOR (w_tu_descriptor),
-
-  .I_CLEAR_ERROR   (I_CLEAR_ERROR),
-  .O_BUSY          (w_tu_busy),
-  .O_DONE          (w_tu_done),
-  .O_ERROR         (w_tu_error),
-  .O_STACK_COUNT   (w_tu_stack_count)
 );
 
 //-----------------------------------------------------------
@@ -1194,9 +1116,9 @@ U_CONTROL_FSM
   .I_CLK                     (I_CLK),
   .I_RESETN                  (I_RESETN),
 
-  .I_START                   (w_fsm_start),
+  .I_START                   (I_START),
   .O_START_READY             (w_fsm_start_ready),
-  .I_DONE_ACK                (w_fsm_done_ack),
+  .I_DONE_ACK                (I_DONE_ACK && w_engine_done),
   .I_CLEAR_ERROR             (I_CLEAR_ERROR),
 
   .I_META_VALID              (w_meta_valid),

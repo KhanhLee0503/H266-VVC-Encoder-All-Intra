@@ -1,0 +1,528 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:84:8: Cell pin connected by name with empty reference: 'O_VALID'
+   84 |       .O_VALID         (),
+      |        ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:86:8: Cell pin connected by name with empty reference: 'O_SIDE_INDEX'
+   86 |       .O_SIDE_INDEX    (),
+      |        ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:824:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  824 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:825:4: Cell pin connected by name with empty reference: 'O_DONE'
+  825 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:856:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  856 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:857:4: Cell pin connected by name with empty reference: 'O_DONE'
+  857 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:944:4: Cell pin connected by name with empty reference: 'O_MODE_VALID'
+  944 |   .O_MODE_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:945:4: Cell pin connected by name with empty reference: 'O_INTRA_PRED_ANGLE'
+  945 |   .O_INTRA_PRED_ANGLE(),
+      |    ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:947:4: Cell pin connected by name with empty reference: 'O_ANGLE_NEGATIVE'
+  947 |   .O_ANGLE_NEGATIVE(),
+      |    ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:948:4: Cell pin connected by name with empty reference: 'O_ANGLE_ZERO'
+  948 |   .O_ANGLE_ZERO(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:949:4: Cell pin connected by name with empty reference: 'O_REF_FILTER_FLAG'
+  949 |   .O_REF_FILTER_FLAG()
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:992:4: Cell pin connected by name with empty reference: 'O_COMPONENT_ID'
+  992 |   .O_COMPONENT_ID(),
+      |    ^~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:993:4: Cell pin connected by name with empty reference: 'O_MAPPED_MODE'
+  993 |   .O_MAPPED_MODE(),
+      |    ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:994:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  994 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:995:4: Cell pin connected by name with empty reference: 'O_DONE'
+  995 |   .O_DONE()
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1090:4: Cell pin connected by name with empty reference: 'O_BANK_VALID'
+ 1090 |   .O_BANK_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1093:4: Cell pin connected by name with empty reference: 'O_ALL_CANDIDATES_READY'
+ 1093 |   .O_ALL_CANDIDATES_READY(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1096:4: Cell pin connected by name with empty reference: 'O_RD_BUSY'
+ 1096 |   .O_RD_BUSY(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1247:4: Cell pin connected by name with empty reference: 'O_MAP_UPDATE_DONE'
+ 1247 |   .O_MAP_UPDATE_DONE(),
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:3:8: Filename 'INTRA_FILTERING_UNIT' does not match MODULE name: 'INTRA_REF_FILTER_UNIT'
+    3 | module INTRA_REF_FILTER_UNIT #(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:358:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  358 |   .O_BUSY                (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:441:4: Cell pin connected by name with empty reference: 'O_FULL'
+  441 |   .O_FULL     (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:442:4: Cell pin connected by name with empty reference: 'O_EMPTY'
+  442 |   .O_EMPTY    ()
+      |    ^~~~~~~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_8.sv:73:20: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's SIGNED generates 16 bits.
+                                                                                                                                       : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_8'
+   73 |     assign w_coeff = $signed(I_DATA[lane_idx*PARA_DATA_WD +: PARA_DATA_WD]);
+      |                    ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_4.sv:53:20: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's SIGNED generates 16 bits.
+                                                                                                                                       : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_4'
+   53 |   assign w_coeff_1 = $signed(I_DATA[0*PARA_DATA_WD +: PARA_DATA_WD]);
+      |                    ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_4.sv:54:20: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's SIGNED generates 16 bits.
+                                                                                                                                       : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_4'
+   54 |   assign w_coeff_3 = $signed(I_DATA[1*PARA_DATA_WD +: PARA_DATA_WD]);
+      |                    ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_32.sv:147:16: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's SIGNED generates 16 bits.
+                                                                                                                                         : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_32'
+  147 |     assign w_x = $signed(r_input_vector[4*int'(r_issue_idx)+mcm_idx]);
+      |                ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_16.sv:153:16: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 16 bits.
+                                                                                                                                         : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_16'
+  153 |     assign w_x = r_input_vector[4*int'(r_issue_idx)+mcm_idx];
+      |                ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:46:20: Operator ASSIGNW expects 17 bits on the Assign RHS, but Assign RHS's SIGNED generates 16 bits.
+                                                                                                                                    : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2'
+   46 |   assign w_coeff_0 = $signed(I_DATA[0*PARA_DATA_WD +: PARA_DATA_WD]);
+      |                    ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:47:20: Operator ASSIGNW expects 17 bits on the Assign RHS, but Assign RHS's SIGNED generates 16 bits.
+                                                                                                                                    : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2'
+   47 |   assign w_coeff_2 = $signed(I_DATA[1*PARA_DATA_WD +: PARA_DATA_WD]);
+      |                    ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:50:25: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's VARREF 'r_stage0_sum' generates 17 bits.
+                                                                                                                                    : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2'
+   50 |   assign w_extended_sum = r_stage0_sum;
+      |                         ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:51:32: Operator ASSIGNW expects 28 bits on the Assign RHS, but Assign RHS's VARREF 'r_stage0_difference' generates 17 bits.
+                                                                                                                                    : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2'
+   51 |   assign w_extended_difference = r_stage0_difference;
+      |                                ^
+%Warning-WIDTHEXPAND: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:107:22: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SIGNED generates 28 bits.
+                                                                         : ... note: In instance 'TQ_IDCT2_CORE_TB'
+  107 |           w_received = $signed(O_DATA[lane_idx*PARA_RESULT_WD +: PARA_RESULT_WD]);
+      |                      ^
+%Warning-WIDTHTRUNC: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:1206:59: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                         : ... note: In instance 'TQ_IDCT2_CORE_TB'
+ 1206 |           3: r_coeff[tc_idx][coeff_idx] = (coeff_idx & 1) ? -32768 : 32767;
+      |                                                           ^
+%Warning-UNUSEDPARAM: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_16.sv:27:14: Parameter is not used: 'PARA_ODD_COUNT'
+                                                                                                                                        : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_16'
+   27 |   localparam PARA_ODD_COUNT = 8;
+      |              ^~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_16.sv:28:14: Parameter is not used: 'PARA_GROUP_COUNT'
+                                                                                                                                        : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_16'
+   28 |   localparam PARA_GROUP_COUNT = 2;
+      |              ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_16.sv:29:14: Parameter is not used: 'PARA_MAG_COUNT'
+                                                                                                                                        : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_16'
+   29 |   localparam PARA_MAG_COUNT = 8;
+      |              ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_32.sv:48:37: Signal is not used: 'r_base_7x'
+                                                                                                                                         : ... note: In instance 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_32'
+   48 |   logic signed [PARA_RESULT_WD-1:0] r_base_7x [0:3];
+      |                                     ^~~~~~~~~
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:93:24: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   93 |         r_stall_cycles = r_stall_cycles + 1;
+      |                        ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:95:31: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   95 |           r_last_stall_cycles = r_last_stall_cycles + 1;
+      |                               ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:101:25: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  101 |         r_expected_size = 4 << (r_completed / 5);
+      |                         ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:106:33: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  106 |           r_received_sample_idx = 4*r_output_beat + lane_idx;
+      |                                 ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:107:22: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  107 |           w_received = $signed(O_DATA[lane_idx*PARA_RESULT_WD +: PARA_RESULT_WD]);
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:108:40: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  108 |           r_rtl[r_received_sample_idx] = w_received;
+      |                                        ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:126:23: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  126 |           r_completed = r_completed + 1;
+      |                       ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:127:25: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  127 |           r_output_beat = 0;
+      |                         ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:130:25: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  130 |           r_output_beat = r_output_beat + 1;
+      |                         ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:132:21: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  132 |       r_was_stalled = O_DATA_VALID && !O_DATA_READY;
+      |                     ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:133:22: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  133 |       r_stalled_data = O_DATA;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:134:22: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  134 |       r_stalled_last = O_DATA_LAST;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:80:19: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   80 |       r_completed = 0;
+      |                   ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:81:21: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   81 |       r_output_beat = 0;
+      |                     ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:82:22: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   82 |       r_stall_cycles = 0;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:83:27: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   83 |       r_last_stall_cycles = 0;
+      |                           ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:84:21: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   84 |       r_was_stalled = 1'b0;
+      |                     ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:85:22: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   85 |       r_stalled_data = '0;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:86:22: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   86 |       r_stalled_last = 1'b0;
+      |                      ^
+%Warning-INITIALDLY: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:1220:14: Non-blocking assignment '<=' in initial/final block
+                                                                         : ... This will be executed as a blocking assignment '='!
+ 1220 |     I_RESETN <= 1'b1;
+      |              ^~
+%Warning-INITIALDLY: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:151:26: Non-blocking assignment '<=' in initial/final block
+                                                                        : ... This will be executed as a blocking assignment '='!
+  151 |         I_TRANSFORM_SIZE <= size_code;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:152:22: Non-blocking assignment '<=' in initial/final block
+                                                                        : ... This will be executed as a blocking assignment '='!
+  152 |         I_DATA_VALID <= 1'b1;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:154:57: Non-blocking assignment '<=' in initial/final block
+                                                                        : ... This will be executed as a blocking assignment '='!
+  154 |           I_DATA[lane_idx*PARA_DATA_WD +: PARA_DATA_WD] <= 16'(r_coeff[tc_idx][4*beat_idx+lane_idx]);
+      |                                                         ^~
+%Warning-INITIALDLY: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:156:22: Non-blocking assignment '<=' in initial/final block
+                                                                        : ... This will be executed as a blocking assignment '='!
+  156 |         I_DATA_VALID <= 1'b0;
+      |                      ^~
+%Warning-SYNCASYNCNET: ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:19:9: Signal flopped as both synchronous and async: 'TQ_IDCT2_CORE_TB.I_RESETN'
+                       /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_CORE.sv:157:10: ... Location of async usage
+  157 |     if (!I_RESETN)
+      |          ^~~~~~~~
+                       ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:68:10: ... Location of sync usage
+   68 |     if (!I_RESETN) begin
+      |          ^~~~~~~~
+%Warning-UNOPTFLAT: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:25:40: Signal unoptimizable: Circular combinational logic: 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2.w_ready'
+   25 |   logic [1:0]                          w_ready;
+      |                                        ^~~~~~~
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:25:40:      Example path: TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2.w_ready
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:39:35:      Example path: ASSIGNW
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_BASE_2.sv:25:40:      Example path: TQ_IDCT2_CORE_TB.u_dut.u_idct2_base_2.w_ready
+%Warning-UNOPTFLAT: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_4.sv:25:40: Signal unoptimizable: Circular combinational logic: 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_4.w_ready'
+   25 |   logic [2:0]                          w_ready;
+      |                                        ^~~~~~~
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_4.sv:25:40:      Example path: TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_4.w_ready
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_4.sv:46:35:      Example path: ASSIGNW
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_4.sv:25:40:      Example path: TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_4.w_ready
+%Warning-UNOPTFLAT: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_8.sv:26:40: Signal unoptimizable: Circular combinational logic: 'TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_8.w_ready'
+   26 |   logic [4:0]                          w_ready;
+      |                                        ^~~~~~~
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_8.sv:26:40:      Example path: TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_8.w_ready
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_8.sv:45:35:      Example path: ASSIGNW
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TRANS/DCT2_CORE/TQ_IDCT2_ODD_MCM_8.sv:26:40:      Example path: TQ_IDCT2_CORE_TB.u_dut.u_idct2_odd_mcm_8.w_ready
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/TQ_IDCT2_CORE_TB'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+/usr/bin/python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VTQ_IDCT2_CORE_TB.cpp VTQ_IDCT2_CORE_TB___024root__DepSet_hd2b70573__0.cpp VTQ_IDCT2_CORE_TB___024root__DepSet_hf9f29138__0.cpp VTQ_IDCT2_CORE_TB__main.cpp VTQ_IDCT2_CORE_TB__Trace__0.cpp VTQ_IDCT2_CORE_TB__ConstPool_0.cpp VTQ_IDCT2_CORE_TB___024root__Slow.cpp VTQ_IDCT2_CORE_TB___024root__DepSet_hd2b70573__0__Slow.cpp VTQ_IDCT2_CORE_TB___024root__DepSet_hf9f29138__0__Slow.cpp VTQ_IDCT2_CORE_TB__Syms.cpp VTQ_IDCT2_CORE_TB__Trace__0__Slow.cpp VTQ_IDCT2_CORE_TB__TraceDecls__0__Slow.cpp > VTQ_IDCT2_CORE_TB__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o VTQ_IDCT2_CORE_TB__ALL.o VTQ_IDCT2_CORE_TB__ALL.cpp
+echo "" > VTQ_IDCT2_CORE_TB__ALL.verilator_deplist.tmp
+Archive ar -rcs VTQ_IDCT2_CORE_TB__ALL.a VTQ_IDCT2_CORE_TB__ALL.o
+g++     verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o VTQ_IDCT2_CORE_TB__ALL.a    -pthread -lpthread -latomic   -o VTQ_IDCT2_CORE_TB
+rm VTQ_IDCT2_CORE_TB__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/TQ_IDCT2_CORE_TB'
+====================================================
+[PASS TC1] IDCT2 4-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 0 0 0 0
+====================================================
+[PASS TC2] IDCT2 4-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 4095 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 339885 147420 -147420 -339885
+====================================================
+[PASS TC3] IDCT2 4-point raw
+  Input coefficients C[k]:
+  C[0..3] = -842 -729 -616 -503
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = -171927 1041 -29969 -14697
+====================================================
+[PASS TC4] IDCT2 4-point raw
+  Input coefficients C[k]:
+  C[0..3] = 32767 -32768 32767 -32768
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 294784 1540096 -1540096 8093568
+====================================================
+[PASS TC5] IDCT2 4-point raw
+  Input coefficients C[k]:
+  C[0..3] = -23001 -8847 -8810 -23001
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = -3598241 682367 -2498815 -473567
+====================================================
+[PASS TC6] IDCT2 8-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 0 0 0
+  C[4..7] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 0 0 0 0
+  X[4..7] = 0 0 0 0
+====================================================
+[PASS TC7] IDCT2 8-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 4095 0 0
+  C[4..7] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 364455 307125 204750 73710
+  X[4..7] = -73710 -204750 -307125 -364455
+====================================================
+[PASS TC8] IDCT2 8-point raw
+  Input coefficients C[k]:
+  C[0..3] = -447 -334 -221 -108
+  C[4..7] = 5 118 231 344
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = -64049 -106865 19037 -40639
+  X[4..7] = 4117 -22635 -5249 -12581
+====================================================
+[PASS TC9] IDCT2 8-point raw
+  Input coefficients C[k]:
+  C[0..3] = 32767 -32768 32767 -32768
+  C[4..7] = 32767 -32768 32767 -32768
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 491273 1146927 -229423 1802231
+  X[4..7] = -1212425 3309521 -4227025 15695625
+====================================================
+[PASS TC10] IDCT2 8-point raw
+  Input coefficients C[k]:
+  C[0..3] = -23001 -8702 -8665 -23001
+  C[4..7] = -8591 -8554 -23001 -8480
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = -6649012 1621577 -1697366 631927
+  X[4..7] = -1581241 -3341400 -271771 -489226
+====================================================
+[PASS TC11] IDCT2 16-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 0 0 0
+  C[4..7] = 0 0 0 0
+  C[8..11] = 0 0 0 0
+  C[12..15] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 0 0 0 0
+  X[4..7] = 0 0 0 0
+  X[8..11] = 0 0 0 0
+  X[12..15] = 0 0 0 0
+====================================================
+[PASS TC12] IDCT2 16-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 4095 0 0
+  C[4..7] = 0 0 0 0
+  C[8..11] = 0 0 0 0
+  C[12..15] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 368550 356265 327600 286650
+  X[4..7] = 233415 176085 102375 36855
+  X[8..11] = -36855 -102375 -176085 -233415
+  X[12..15] = -286650 -327600 -356265 -368550
+====================================================
+[PASS TC13] IDCT2 16-point raw
+  Input coefficients C[k]:
+  C[0..3] = -52 61 174 287
+  C[4..7] = 400 513 626 739
+  C[8..11] = 852 965 -923 -810
+  C[12..15] = -697 -584 -471 -358
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 192698 161910 -460049 75293
+  X[4..7] = 144381 -123916 -88252 138572
+  X[8..11] = -35572 -97916 61608 52751
+  X[12..15] = -100057 1929 81838 -58466
+====================================================
+[PASS TC14] IDCT2 16-point raw
+  Input coefficients C[k]:
+  C[0..3] = 32767 -32768 32767 -32768
+  C[4..7] = 32767 -32768 32767 -32768
+  C[8..11] = 32767 -32768 32767 -32768
+  C[12..15] = 32767 -32768 32767 -32768
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 589345 852097 130971 1179685
+  X[4..7] = -131127 1507335 -393251 1900529
+  X[8..11] = -917519 2686941 -1966073 3735497
+  X[12..15] = -3604443 6487963 -9305983 30801441
+====================================================
+[PASS TC15] IDCT2 16-point raw
+  Input coefficients C[k]:
+  C[0..3] = -23001 -8557 -8520 -23001
+  C[4..7] = -8446 -8409 -23001 -8335
+  C[8..11] = -8298 -23001 -8224 -8187
+  C[12..15] = -23001 -8113 -8076 -23001
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = -12672432 3521842 -2867303 1356525
+  X[4..7] = -1799981 796135 -1541956 528402
+  X[8..11] = -1512936 1048518 -7622887 -1345491
+  X[12..15] = -107381 -490021 -372264 -471794
+====================================================
+[PASS TC16] IDCT2 32-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 0 0 0
+  C[4..7] = 0 0 0 0
+  C[8..11] = 0 0 0 0
+  C[12..15] = 0 0 0 0
+  C[16..19] = 0 0 0 0
+  C[20..23] = 0 0 0 0
+  C[24..27] = 0 0 0 0
+  C[28..31] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 0 0 0 0
+  X[4..7] = 0 0 0 0
+  X[8..11] = 0 0 0 0
+  X[12..15] = 0 0 0 0
+  X[16..19] = 0 0 0 0
+  X[20..23] = 0 0 0 0
+  X[24..27] = 0 0 0 0
+  X[28..31] = 0 0 0 0
+====================================================
+[PASS TC17] IDCT2 32-point raw
+  Input coefficients C[k]:
+  C[0..3] = 0 4095 0 0
+  C[4..7] = 0 0 0 0
+  C[8..11] = 0 0 0 0
+  C[12..15] = 0 0 0 0
+  C[16..19] = 0 0 0 0
+  C[20..23] = 0 0 0 0
+  C[24..27] = 0 0 0 0
+  C[28..31] = 0 0 0 0
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 368550 368550 360360 348075
+  X[4..7] = 335790 319410 298935 274365
+  X[8..11] = 249795 221130 188370 155610
+  X[12..15] = 126945 90090 53235 16380
+  X[16..19] = -16380 -53235 -90090 -126945
+  X[20..23] = -155610 -188370 -221130 -249795
+  X[24..27] = -274365 -298935 -319410 -335790
+  X[28..31] = -348075 -360360 -368550 -368550
+====================================================
+[PASS TC18] IDCT2 32-point raw
+  Input coefficients C[k]:
+  C[0..3] = 343 456 569 682
+  C[4..7] = 795 908 -980 -867
+  C[8..11] = -754 -641 -528 -415
+  C[12..15] = -302 -189 -76 37
+  C[16..19] = 150 263 376 489
+  C[20..23] = 602 715 828 941
+  C[24..27] = -947 -834 -721 -608
+  C[28..31] = -495 -382 -269 -156
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 37809 64895 179189 951252
+  X[4..7] = -123948 79602 57762 -460866
+  X[8..11] = -80936 -172336 -257787 155404
+  X[12..15] = -14604 88202 258007 -5921
+  X[16..19] = 104307 52569 -168956 -1264
+  X[20..23] = -120062 -143001 62090 -53522
+  X[24..27] = 57656 162788 3410 127050
+  X[28..31] = 51980 -93499 24697 -119503
+====================================================
+[PASS TC19] IDCT2 32-point raw
+  Input coefficients C[k]:
+  C[0..3] = 32767 -32768 32767 -32768
+  C[4..7] = 32767 -32768 32767 -32768
+  C[8..11] = 32767 -32768 32767 -32768
+  C[12..15] = 32767 -32768 32767 -32768
+  C[16..19] = 32767 -32768 32767 -32768
+  C[20..23] = 32767 -32768 32767 -32768
+  C[24..27] = 32767 -32768 32767 -32768
+  C[28..31] = 32767 -32768 32767 -32768
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = 588884 786716 327482 852078
+  X[4..7] = 262030 852028 130990 1441820
+  X[8..11] = -131130 1507340 -196654 1507332
+  X[12..15] = -458788 1703932 -655386 2097134
+  X[16..19] = -917522 2359270 -1441796 2818012
+  X[20..23] = -1769468 3211218 -2293748 3932102
+  X[24..27] = -3276772 5242798 -4784068 7208846
+  X[28..31] = -8060818 12648250 -19398372 61013076
+====================================================
+[PASS TC20] IDCT2 32-point raw
+  Input coefficients C[k]:
+  C[0..3] = -23001 -8412 -8375 -23001
+  C[4..7] = -8301 -8264 -23001 -8190
+  C[8..11] = -8153 -23001 -8079 -8042
+  C[12..15] = -23001 -7968 -7931 -23001
+  C[16..19] = -7857 -7820 -23001 -7746
+  C[20..23] = -7709 -23001 -7635 -7598
+  C[24..27] = -23001 -7524 -7487 -23001
+  C[28..31] = -7413 -7376 -23001 -7302
+  Reconstructed raw output RTL (each equals golden):
+  X[0..3] = -24445345 7124287 -5091168 2933080
+  X[4..7] = -2995463 1700686 -2317196 1149633
+  X[8..11] = -1848986 849747 -1623881 736837
+  X[12..15] = -1507486 697879 -1448174 581972
+  X[16..19] = -1527016 727310 -1703807 1364882
+  X[20..23] = -3421885 -14001347 1394625 -1192354
+  X[24..27] = -95889 -734516 -163830 -529053
+  X[28..31] = -342328 -492860 -425211 -459191
+[PASS] IDCT2_CORE: 20 vectors (4/8/16/32), 116 stall cycles, 47 stalled-LAST cycles
+- ../01_tb/INV_TRANS_QUANT/TQ_IDCT2_CORE_TB.sv:1233: Verilog $finish

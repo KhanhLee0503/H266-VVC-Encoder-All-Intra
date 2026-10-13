@@ -1,0 +1,45 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Error: Cannot find file containing module: ../01_tb/TB_I2S_MASTER.sv
+%Error: This may be because there's no search path specified with -I<dir>.
+        ... Looked in:
+             ../01_tb/TB_I2S_MASTER.sv
+             ../01_tb/TB_I2S_MASTER.sv.v
+             ../01_tb/TB_I2S_MASTER.sv.sv
+             obj_dir/../01_tb/TB_I2S_MASTER.sv
+             obj_dir/../01_tb/TB_I2S_MASTER.sv.v
+             obj_dir/../01_tb/TB_I2S_MASTER.sv.sv
+%Error: Cannot find file containing module: ../02_sim/build
+%Error: Exiting due to 3 error(s)

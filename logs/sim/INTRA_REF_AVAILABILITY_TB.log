@@ -1,0 +1,299 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:84:8: Cell pin connected by name with empty reference: 'O_VALID'
+   84 |       .O_VALID         (),
+      |        ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:86:8: Cell pin connected by name with empty reference: 'O_SIDE_INDEX'
+   86 |       .O_SIDE_INDEX    (),
+      |        ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:824:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  824 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:825:4: Cell pin connected by name with empty reference: 'O_DONE'
+  825 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:856:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  856 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:857:4: Cell pin connected by name with empty reference: 'O_DONE'
+  857 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:944:4: Cell pin connected by name with empty reference: 'O_MODE_VALID'
+  944 |   .O_MODE_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:945:4: Cell pin connected by name with empty reference: 'O_INTRA_PRED_ANGLE'
+  945 |   .O_INTRA_PRED_ANGLE(),
+      |    ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:947:4: Cell pin connected by name with empty reference: 'O_ANGLE_NEGATIVE'
+  947 |   .O_ANGLE_NEGATIVE(),
+      |    ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:948:4: Cell pin connected by name with empty reference: 'O_ANGLE_ZERO'
+  948 |   .O_ANGLE_ZERO(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:949:4: Cell pin connected by name with empty reference: 'O_REF_FILTER_FLAG'
+  949 |   .O_REF_FILTER_FLAG()
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:992:4: Cell pin connected by name with empty reference: 'O_COMPONENT_ID'
+  992 |   .O_COMPONENT_ID(),
+      |    ^~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:993:4: Cell pin connected by name with empty reference: 'O_MAPPED_MODE'
+  993 |   .O_MAPPED_MODE(),
+      |    ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:994:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  994 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:995:4: Cell pin connected by name with empty reference: 'O_DONE'
+  995 |   .O_DONE()
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1090:4: Cell pin connected by name with empty reference: 'O_BANK_VALID'
+ 1090 |   .O_BANK_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1093:4: Cell pin connected by name with empty reference: 'O_ALL_CANDIDATES_READY'
+ 1093 |   .O_ALL_CANDIDATES_READY(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1096:4: Cell pin connected by name with empty reference: 'O_RD_BUSY'
+ 1096 |   .O_RD_BUSY(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1247:4: Cell pin connected by name with empty reference: 'O_MAP_UPDATE_DONE'
+ 1247 |   .O_MAP_UPDATE_DONE(),
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:3:8: Filename 'INTRA_FILTERING_UNIT' does not match MODULE name: 'INTRA_REF_FILTER_UNIT'
+    3 | module INTRA_REF_FILTER_UNIT #(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:358:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  358 |   .O_BUSY                (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:441:4: Cell pin connected by name with empty reference: 'O_FULL'
+  441 |   .O_FULL     (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:442:4: Cell pin connected by name with empty reference: 'O_EMPTY'
+  442 |   .O_EMPTY    ()
+      |    ^~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:40:12: Signal is not used: 'O_TOP_MAP_X_UNIT'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   40 | wire [4:0] O_TOP_MAP_X_UNIT;
+      |            ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:41:12: Signal is not used: 'O_TOP_MAP_Y_UNIT'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   41 | wire [4:0] O_TOP_MAP_Y_UNIT;
+      |            ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:43:12: Signal is not used: 'O_LEFT_MAP_X_UNIT'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   43 | wire [4:0] O_LEFT_MAP_X_UNIT;
+      |            ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:44:12: Signal is not used: 'O_LEFT_MAP_Y_UNIT'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   44 | wire [4:0] O_LEFT_MAP_Y_UNIT;
+      |            ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:46:12: Signal is not used: 'O_TL_MAP_X_UNIT'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   46 | wire [4:0] O_TL_MAP_X_UNIT;
+      |            ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:47:12: Signal is not used: 'O_TL_MAP_Y_UNIT'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   47 | wire [4:0] O_TL_MAP_Y_UNIT;
+      |            ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:49:12: Signal is not used: 'O_TOP_REF_X'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   49 | wire [7:0] O_TOP_REF_X;
+      |            ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:50:12: Signal is not used: 'O_TOP_REF_Y'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   50 | wire [7:0] O_TOP_REF_Y;
+      |            ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:53:6: Signal is not used: 'O_TOP_CODING_VALID'
+                                                                                         : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   53 | wire O_TOP_CODING_VALID;
+      |      ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:54:6: Signal is not used: 'O_TOP_RECON_READY'
+                                                                                         : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   54 | wire O_TOP_RECON_READY;
+      |      ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:57:12: Signal is not used: 'O_LEFT_REF_X'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   57 | wire [7:0] O_LEFT_REF_X;
+      |            ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:58:12: Signal is not used: 'O_LEFT_REF_Y'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   58 | wire [7:0] O_LEFT_REF_Y;
+      |            ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:61:6: Signal is not used: 'O_LEFT_CODING_VALID'
+                                                                                         : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   61 | wire O_LEFT_CODING_VALID;
+      |      ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:62:6: Signal is not used: 'O_LEFT_RECON_READY'
+                                                                                         : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   62 | wire O_LEFT_RECON_READY;
+      |      ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:65:12: Signal is not used: 'O_TL_REF_X'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   65 | wire [7:0] O_TL_REF_X;
+      |            ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:66:12: Signal is not used: 'O_TL_REF_Y'
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   66 | wire [7:0] O_TL_REF_Y;
+      |            ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:69:6: Signal is not used: 'O_TL_CODING_VALID'
+                                                                                         : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   69 | wire O_TL_CODING_VALID;
+      |      ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:70:6: Signal is not used: 'O_TL_RECON_READY'
+                                                                                         : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   70 | wire O_TL_RECON_READY;
+      |      ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:84:17: Bits of signal are not used: 'origin_x'[31:13]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   84 |   input integer origin_x,
+      |                 ^~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:85:17: Bits of signal are not used: 'origin_y'[31:13]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   85 |   input integer origin_y,
+      |                 ^~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:86:17: Bits of signal are not used: 'picture_w'[31:13]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   86 |   input integer picture_w,
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:87:17: Bits of signal are not used: 'picture_h'[31:13]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   87 |   input integer picture_h,
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:88:17: Bits of signal are not used: 'tu_x'[31:7]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   88 |   input integer tu_x,
+      |                 ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:89:17: Bits of signal are not used: 'tu_y'[31:7]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   89 |   input integer tu_y,
+      |                 ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:90:17: Bits of signal are not used: 'top_seg'[31:4]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   90 |   input integer top_seg,
+      |                 ^~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:91:17: Bits of signal are not used: 'left_seg'[31:4]
+                                                                                          : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+   91 |   input integer left_seg
+      |                 ^~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:140:17: Bits of signal are not used: 'tx'[31:14]
+                                                                                           : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+  140 |   input integer tx, input integer ty,
+      |                 ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:140:35: Bits of signal are not used: 'ty'[31:14]
+                                                                                           : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+  140 |   input integer tx, input integer ty,
+      |                                   ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:141:17: Bits of signal are not used: 'lx'[31:14]
+                                                                                           : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+  141 |   input integer lx, input integer ly,
+      |                 ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:141:35: Bits of signal are not used: 'ly'[31:14]
+                                                                                           : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+  141 |   input integer lx, input integer ly,
+      |                                   ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:142:17: Bits of signal are not used: 'tlx'[31:14]
+                                                                                           : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+  142 |   input integer tlx, input integer tly
+      |                 ^~~
+%Warning-UNUSEDSIGNAL: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:142:36: Bits of signal are not used: 'tly'[31:14]
+                                                                                           : ... note: In instance 'INTRA_REF_AVAILABILITY_TB'
+  142 |   input integer tlx, input integer tly
+      |                                    ^~~
+%Warning-BLKSEQ: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:78:15: Blocking assignment '=' in sequential logic process
+                                                                                    : ... Suggest using delayed assignment '<='
+   78 | always #5 clk = ~clk;
+      |               ^
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:93:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   93 |   I_COMPONENT_ID    <= comp;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:94:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   94 |   I_CTU_X_ORIGIN    <= 13'(origin_x);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:95:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   95 |   I_CTU_Y_ORIGIN    <= 13'(origin_y);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:96:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   96 |   I_PICTURE_WIDTH   <= 13'(picture_w);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:97:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   97 |   I_PICTURE_HEIGHT  <= 13'(picture_h);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:98:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   98 |   I_TU_X            <= 7'(tu_x);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:99:21: Non-blocking assignment '<=' in initial/final block
+                                                                                        : ... This will be executed as a blocking assignment '='!
+   99 |   I_TU_Y            <= 7'(tu_y);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:100:21: Non-blocking assignment '<=' in initial/final block
+                                                                                         : ... This will be executed as a blocking assignment '='!
+  100 |   I_TOP_SEG_INDEX   <= 4'(top_seg);
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:101:21: Non-blocking assignment '<=' in initial/final block
+                                                                                         : ... This will be executed as a blocking assignment '='!
+  101 |   I_LEFT_SEG_INDEX  <= 4'(left_seg);
+      |                     ^~
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/INTRA_REF_AVAILABILITY_TB'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+/usr/bin/python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VINTRA_REF_AVAILABILITY_TB.cpp VINTRA_REF_AVAILABILITY_TB___024root__DepSet_heab05010__0.cpp VINTRA_REF_AVAILABILITY_TB___024root__DepSet_hc4677700__0.cpp VINTRA_REF_AVAILABILITY_TB__main.cpp VINTRA_REF_AVAILABILITY_TB__Trace__0.cpp VINTRA_REF_AVAILABILITY_TB__ConstPool_0.cpp VINTRA_REF_AVAILABILITY_TB___024root__Slow.cpp VINTRA_REF_AVAILABILITY_TB___024root__DepSet_heab05010__0__Slow.cpp VINTRA_REF_AVAILABILITY_TB___024root__DepSet_hc4677700__0__Slow.cpp VINTRA_REF_AVAILABILITY_TB__Syms.cpp VINTRA_REF_AVAILABILITY_TB__Trace__0__Slow.cpp VINTRA_REF_AVAILABILITY_TB__TraceDecls__0__Slow.cpp > VINTRA_REF_AVAILABILITY_TB__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o VINTRA_REF_AVAILABILITY_TB__ALL.o VINTRA_REF_AVAILABILITY_TB__ALL.cpp
+echo "" > VINTRA_REF_AVAILABILITY_TB__ALL.verilator_deplist.tmp
+Archive ar -rcs VINTRA_REF_AVAILABILITY_TB__ALL.a VINTRA_REF_AVAILABILITY_TB__ALL.o
+g++     verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o VINTRA_REF_AVAILABILITY_TB__ALL.a    -pthread -lpthread -latomic   -o VINTRA_REF_AVAILABILITY_TB
+rm VINTRA_REF_AVAILABILITY_TB__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/INTRA_REF_AVAILABILITY_TB'
+[PASS] TC1 Luma local references                   TOP/LEFT/TL=0/0/0 globals TOP(136,135) LEFT(135,136) TL(135,135)
+[PASS] TC2 Cb local, pre-scaled geometry           TOP/LEFT/TL=0/0/0 globals TOP(72,71) LEFT(71,72) TL(71,71)
+[PASS] TC3 Cr local, pre-scaled geometry           TOP/LEFT/TL=0/0/0 globals TOP(72,71) LEFT(71,72) TL(71,71)
+[PASS] TC4 Cb above CTU crossing                   TOP/LEFT/TL=1/0/1 globals TOP(72,63) LEFT(71,64) TL(71,63)
+[PASS] TC5 Cb left CTU crossing                    TOP/LEFT/TL=0/2/2 globals TOP(64,71) LEFT(63,72) TL(63,71)
+[PASS] TC6 Cr above-left CTU crossing              TOP/LEFT/TL=1/2/3 globals TOP(64,63) LEFT(63,64) TL(63,63)
+[PASS] TC7 First picture corner                    TOP/LEFT/TL=4/4/4 globals TOP(0,0) LEFT(0,0) TL(0,0)
+[PASS] TC8 Right boundary: last segment valid      TOP/LEFT/TL=0/0/0 globals TOP(1916,71) LEFT(1915,72) TL(1915,71)
+[PASS] TC9 Right boundary: top segment overflow    TOP/LEFT/TL=4/0/0 globals TOP(1920,71) LEFT(1915,72) TL(1915,71)
+[PASS] TC10 Bottom boundary: last segment valid     TOP/LEFT/TL=0/0/0 globals TOP(72,1075) LEFT(71,1076) TL(71,1075)
+[PASS] TC11 Bottom boundary: left segment overflow  TOP/LEFT/TL=0/4/0 globals TOP(72,1075) LEFT(71,1080) TL(71,1075)
+[PASS] TC12 TU origin beyond picture bottom         TOP/LEFT/TL=4/4/4 globals TOP(72,1079) LEFT(71,1080) TL(71,1079)
+[PASS] TC13 TU origin beyond CTU right              TOP/LEFT/TL=4/4/4 globals TOP(128,71) LEFT(127,72) TL(127,71)
+[PASS] TC14 Invalid component ID                    TOP/LEFT/TL=4/4/4 globals TOP(72,71) LEFT(71,72) TL(71,71)
+[PASS] ALL 14 INTRA_REF_AVAILABILITY UNIT TESTCASES
+- ../01_tb/INTRA_PREDICTION_ENGINE/INTRA_REF_AVAILABILITY_TB.sv:249: Verilog $finish

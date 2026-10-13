@@ -1,0 +1,277 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:84:8: Cell pin connected by name with empty reference: 'O_VALID'
+   84 |       .O_VALID         (),
+      |        ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:86:8: Cell pin connected by name with empty reference: 'O_SIDE_INDEX'
+   86 |       .O_SIDE_INDEX    (),
+      |        ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:824:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  824 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:825:4: Cell pin connected by name with empty reference: 'O_DONE'
+  825 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:856:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  856 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:857:4: Cell pin connected by name with empty reference: 'O_DONE'
+  857 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:944:4: Cell pin connected by name with empty reference: 'O_MODE_VALID'
+  944 |   .O_MODE_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:945:4: Cell pin connected by name with empty reference: 'O_INTRA_PRED_ANGLE'
+  945 |   .O_INTRA_PRED_ANGLE(),
+      |    ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:947:4: Cell pin connected by name with empty reference: 'O_ANGLE_NEGATIVE'
+  947 |   .O_ANGLE_NEGATIVE(),
+      |    ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:948:4: Cell pin connected by name with empty reference: 'O_ANGLE_ZERO'
+  948 |   .O_ANGLE_ZERO(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:949:4: Cell pin connected by name with empty reference: 'O_REF_FILTER_FLAG'
+  949 |   .O_REF_FILTER_FLAG()
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:992:4: Cell pin connected by name with empty reference: 'O_COMPONENT_ID'
+  992 |   .O_COMPONENT_ID(),
+      |    ^~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:993:4: Cell pin connected by name with empty reference: 'O_MAPPED_MODE'
+  993 |   .O_MAPPED_MODE(),
+      |    ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:994:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  994 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:995:4: Cell pin connected by name with empty reference: 'O_DONE'
+  995 |   .O_DONE()
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1090:4: Cell pin connected by name with empty reference: 'O_BANK_VALID'
+ 1090 |   .O_BANK_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1093:4: Cell pin connected by name with empty reference: 'O_ALL_CANDIDATES_READY'
+ 1093 |   .O_ALL_CANDIDATES_READY(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1096:4: Cell pin connected by name with empty reference: 'O_RD_BUSY'
+ 1096 |   .O_RD_BUSY(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1247:4: Cell pin connected by name with empty reference: 'O_MAP_UPDATE_DONE'
+ 1247 |   .O_MAP_UPDATE_DONE(),
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:3:8: Filename 'INTRA_FILTERING_UNIT' does not match MODULE name: 'INTRA_REF_FILTER_UNIT'
+    3 | module INTRA_REF_FILTER_UNIT #(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:358:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  358 |   .O_BUSY                (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:441:4: Cell pin connected by name with empty reference: 'O_FULL'
+  441 |   .O_FULL     (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:442:4: Cell pin connected by name with empty reference: 'O_EMPTY'
+  442 |   .O_EMPTY    ()
+      |    ^~~~~~~
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:34:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   34 |       O_QP_REM = I_QP_PRIME - 7'd72;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:38:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   38 |       O_QP_REM = I_QP_PRIME - 7'd66;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:42:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   42 |       O_QP_REM = I_QP_PRIME - 7'd60;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:46:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   46 |       O_QP_REM = I_QP_PRIME - 7'd54;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:50:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   50 |       O_QP_REM = I_QP_PRIME - 7'd48;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:54:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   54 |       O_QP_REM = I_QP_PRIME - 7'd42;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:58:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   58 |       O_QP_REM = I_QP_PRIME - 7'd36;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:62:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   62 |       O_QP_REM = I_QP_PRIME - 7'd30;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:66:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   66 |       O_QP_REM = I_QP_PRIME - 7'd24;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:70:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   70 |       O_QP_REM = I_QP_PRIME - 7'd18;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:74:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   74 |       O_QP_REM = I_QP_PRIME - 7'd12;
+      |                ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:78:16: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's SUB generates 7 bits.
+                                                                                                                               : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   78 |       O_QP_REM = I_QP_PRIME - 7'd6;
+      |                ^
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:66:48: Signal is not used: 'w_qp_per'
+                                                                                                                                    : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut'
+   66 |   logic [3:0]                                  w_qp_per;
+      |                                                ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:67:48: Signal is not used: 'w_qp_rem'
+                                                                                                                                    : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut'
+   67 |   logic [2:0]                                  w_qp_rem;
+      |                                                ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:68:48: Signal is not used: 'w_sqrt_adjust'
+                                                                                                                                    : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut'
+   68 |   logic                                        w_sqrt_adjust;
+      |                                                ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_DEQUANT_PARAM_CONTROLLER.sv:25:29: Bits of signal are not used: 'w_input_bits_wide'[6:5]
+                                                                                                                                 : ... note: In instance 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.u_tq_dequant_param_controller'
+   25 |   logic signed [6:0]        w_input_bits_wide;
+      |                             ^~~~~~~~~~~~~~~~~
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:94:19: Blocking assignment '=' in sequential logic process
+                                                                                    : ... Suggest using delayed assignment '<='
+   94 |   always #5 I_CLK = ~I_CLK;
+      |                   ^
+%Warning-INITIALDLY: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:119:14: Non-blocking assignment '<=' in initial/final block
+                                                                                         : ... This will be executed as a blocking assignment '='!
+  119 |     I_RESETN <= 1'b1;
+      |              ^~
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:131:16: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  131 |         r_sent = r_sent + 1;
+      |                ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:126:14: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  126 |       r_sent = 0;
+      |              ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:175:22: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  175 |       r_prev_stalled = O_DATA_VALID && !O_DATA_READY;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:177:25: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  177 |         r_output_stalls = r_output_stalls + 1;
+      |                         ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:178:23: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  178 |         r_prev_output = O_DATA;
+      |                       ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:179:21: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  179 |         r_prev_meta = w_actual_meta;
+      |                     ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:180:21: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  180 |         r_prev_clip = O_CLIPPED;
+      |                     ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:185:28: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  185 |       r_prev_input_stalled = I_DATA_VALID && !I_DATA_READY;
+      |                            ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:187:22: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  187 |         r_prev_input = I_DATA;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:188:27: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  188 |         r_prev_input_meta = w_input_meta;
+      |                           ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:205:26: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  205 |           r_tus_received = r_tus_received + 1;
+      |                          ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:208:20: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  208 |         r_received = r_received + 1;
+      |                    ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:166:18: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  166 |       r_received = 0;
+      |                  ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:167:22: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  167 |       r_tus_received = 0;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:168:23: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  168 |       r_output_stalls = 0;
+      |                       ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:169:22: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  169 |       r_prev_stalled = 1'b0;
+      |                      ^
+%Warning-BLKSEQ: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:170:28: Blocking assignment '=' in sequential logic process
+                                                                                     : ... Suggest using delayed assignment '<='
+  170 |       r_prev_input_stalled = 1'b0;
+      |                            ^
+%Warning-SYNCASYNCNET: ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:14:24: Signal flopped as both synchronous and async: 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.I_RESETN'
+                       /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:119:10: ... Location of async usage
+  119 |     if (!I_RESETN) begin
+      |          ^~~~~~~~
+                       ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:125:10: ... Location of sync usage
+  125 |     if (!I_RESETN) begin
+      |          ^~~~~~~~
+%Warning-UNOPTFLAT: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:75:48: Signal unoptimizable: Circular combinational logic: 'TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.w_stage_ready'
+   75 |   logic [3:0]                                  w_stage_ready;
+      |                                                ^~~~~~~~~~~~~
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:75:48:      Example path: TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.w_stage_ready
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:107:41:      Example path: ASSIGNW
+                    /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE.sv:75:48:      Example path: TQ_INVERSE_QUANTIZATION_ENGINE_TB.u_dut.w_stage_ready
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/TQ_INVERSE_QUANTIZATION_ENGINE_TB'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+/usr/bin/python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VTQ_INVERSE_QUANTIZATION_ENGINE_TB.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB___024root__DepSet_h2c2e8e73__0.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB___024root__DepSet_h567c2fec__0.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB__main.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB__Trace__0.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ConstPool_0.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB___024root__Slow.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB___024root__DepSet_h2c2e8e73__0__Slow.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB___024root__DepSet_h567c2fec__0__Slow.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB__Syms.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB__Trace__0__Slow.cpp VTQ_INVERSE_QUANTIZATION_ENGINE_TB__TraceDecls__0__Slow.cpp > VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.o VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.cpp
+echo "" > VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.verilator_deplist.tmp
+Archive ar -rcs VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.a VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.o
+g++     verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.a    -pthread -lpthread -latomic   -o VTQ_INVERSE_QUANTIZATION_ENGINE_TB
+rm VTQ_INVERSE_QUANTIZATION_ENGINE_TB__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/TQ_INVERSE_QUANTIZATION_ENGINE_TB'
+[INFO] TU=101 QP_PRIME=0 SIZE=0,0 completed at beat 3
+[INFO] TU=102 QP_PRIME=21 SIZE=1,2 completed at beat 35
+[INFO] TU=103 QP_PRIME=34 SIZE=2,1 completed at beat 67
+[INFO] TU=104 QP_PRIME=75 SIZE=3,3 completed at beat 323
+[INFO] TU=105 QP_PRIME=12 SIZE=0,3 completed at beat 355
+[INFO] TU=106 QP_PRIME=54 SIZE=3,0 completed at beat 387
+[INFO] TU=107 QP_PRIME=66 SIZE=2,2 completed at beat 451
+[PASS] Inverse Quantization: 452 beats, 7 TUs, 420 output stall cycles
+- ../01_tb/INV_TRANS_QUANT/TQ_INVERSE_QUANTIZATION_ENGINE_TB.sv:220: Verilog $finish

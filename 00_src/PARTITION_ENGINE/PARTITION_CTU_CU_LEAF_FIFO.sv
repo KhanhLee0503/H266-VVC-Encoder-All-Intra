@@ -1,8 +1,11 @@
 //-----------------------------------------------------------
 // Description: This module stores completed coding-unit leaf
 // descriptors from the VVC partition engine. Each FIFO entry contains
-// an 8-bit CU_ID and one 64-bit node descriptor. Both write and read
-// sides use ready/valid flow control. A registered output stage keeps
+// a CU_ID, one node descriptor, and one feature summary captured for
+// the same leaf CU. The original CU/node payload remains in the block
+// RAM array while the small feature summary is stored in a parallel
+// distributed-memory array. Both write and read sides use ready/valid
+// flow control. A registered output stage keeps
 // the payload stable during downstream backpressure. The storage array
 // is not reset so FPGA block-RAM inference is preserved.
 //-----------------------------------------------------------
@@ -11,9 +14,10 @@
 
 module PARTITION_CTU_CU_LEAF_FIFO
 #(
-  parameter PARA_CU_ID_WD = 8,
-  parameter PARA_NODE_WD  = 64,
-  parameter PARA_DEPTH    = 256,
+  parameter PARA_CU_ID_WD           = 8,
+  parameter PARA_NODE_WD            = 64,
+  parameter PARA_FEATURE_SUMMARY_WD = 10,
+  parameter PARA_DEPTH              = 256,
 
   localparam PARA_DATA_WD =
     PARA_CU_ID_WD + PARA_NODE_WD,
@@ -33,11 +37,13 @@ module PARTITION_CTU_CU_LEAF_FIFO
   output logic                       O_WR_READY,
   input      [PARA_CU_ID_WD-1:0]     I_CU_ID,
   input      [PARA_NODE_WD-1:0]      I_NODE_DATA,
+  input      [PARA_FEATURE_SUMMARY_WD-1:0] I_FEATURE_SUMMARY,
 
   output logic                       O_RD_VALID,
   input                              I_RD_READY,
   output logic [PARA_CU_ID_WD-1:0]   O_CU_ID,
   output logic [PARA_NODE_WD-1:0]    O_NODE_DATA,
+  output logic [PARA_FEATURE_SUMMARY_WD-1:0] O_FEATURE_SUMMARY,
 
   output logic                       O_EMPTY,
   output logic                       O_FULL,
@@ -47,11 +53,15 @@ module PARTITION_CTU_CU_LEAF_FIFO
 (* ram_style = "block" *)
 logic [PARA_DATA_WD-1:0] r_memory [0:PARA_DEPTH-1];
 
+(* ram_style = "distributed" *)
+logic [PARA_FEATURE_SUMMARY_WD-1:0] r_feature_memory [0:PARA_DEPTH-1];
+
 logic [PARA_ADDR_WD-1:0]  r_write_pointer;
 logic [PARA_ADDR_WD-1:0]  r_read_pointer;
 logic [PARA_COUNT_WD-1:0] r_total_count;
 
 logic [PARA_DATA_WD-1:0]  r_output_data;
+logic [PARA_FEATURE_SUMMARY_WD-1:0] r_output_feature_summary;
 logic                     r_output_valid;
 
 logic [PARA_DATA_WD-1:0]  w_input_data;
@@ -130,18 +140,24 @@ assign w_memory_write =
 // FIFO payload storage. The memory contents are intentionally not
 // reset because pointer/count state defines which entries are valid.
 always_ff @ (posedge I_CLK) begin
-  if (w_memory_write)
+  if (w_memory_write) begin
     r_memory[r_write_pointer] <= w_input_data;
+    r_feature_memory[r_write_pointer] <= I_FEATURE_SUMMARY;
+  end
 end
 
 // The output data register is loaded either from the oldest RAM entry
 // or directly from the current input payload. RAM data has priority
 // because it always represents an older leaf in FIFO order.
 always_ff @ (posedge I_CLK) begin
-  if (w_memory_read)
+  if (w_memory_read) begin
     r_output_data <= r_memory[r_read_pointer];
-  else if (w_bypass_write)
+    r_output_feature_summary <= r_feature_memory[r_read_pointer];
+  end
+  else if (w_bypass_write) begin
     r_output_data <= w_input_data;
+    r_output_feature_summary <= I_FEATURE_SUMMARY;
+  end
 end
 
 // Registered output valid state. I_CLEAR flushes the FIFO without
@@ -224,6 +240,9 @@ assign O_CU_ID =
 
 assign O_NODE_DATA =
   r_output_data[PARA_NODE_WD-1:0];
+
+assign O_FEATURE_SUMMARY =
+  r_output_feature_summary;
 
 assign O_EMPTY =
   (r_total_count == PARA_COUNT_WD'(0));

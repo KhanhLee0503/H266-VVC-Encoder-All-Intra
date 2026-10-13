@@ -6,7 +6,9 @@
 // QT, BT, and TT availability follows the H.266 split-availability
 // conditions that remain relevant to this configuration. Picture
 // boundary conditions are represented by VALID_WIDTH and
-// VALID_HEIGHT in the node descriptor.
+// VALID_HEIGHT in the node descriptor. Leaf termination is additionally
+// limited to PARA_MAX_LEAF_SIZE so the project can expose Leaf-CU
+// descriptors directly to the CU-level Intra Prediction engine.
 //-----------------------------------------------------------
 
 `timescale 1ns/1ps
@@ -19,6 +21,7 @@ module PARTITION_CONSTRAINT_CHECKER
   parameter PARA_MIN_TT_SIZE     = 8,
   parameter PARA_MAX_TT_SIZE     = 64,
   parameter PARA_MAX_MTT_DEPTH   = 4,
+  parameter PARA_MAX_LEAF_SIZE   = 32,
   parameter PARA_ENABLE_TT       = 1,
   localparam PARA_VPDU_SIZE      = 64,
   localparam PARA_TT_LIMIT       =
@@ -77,12 +80,18 @@ end
 
 // A node that extends beyond the right or bottom picture boundary
 // must continue partitioning. A fully contained node may terminate
-// as a leaf coding unit.
+// as a leaf coding unit only when both dimensions are within the
+// project maximum Leaf-CU size. This guarantees that the downstream
+// Intra Prediction engine never receives a Leaf CU larger than 32x32
+// with the default project configuration.
 always_comb begin
   w_legal_none = 1'b0;
 
   if (I_VALID) begin
-    if (!w_outside_right && !w_outside_bottom)
+    if (!w_outside_right &&
+        !w_outside_bottom &&
+        (I_WIDTH <= PARA_MAX_LEAF_SIZE) &&
+        (I_HEIGHT <= PARA_MAX_LEAF_SIZE))
       w_legal_none = 1'b1;
   end
 end

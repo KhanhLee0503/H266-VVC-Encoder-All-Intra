@@ -1,0 +1,3 @@
+VTQ_DST7_DCT8_CORE_TB___024root__DepSet_h1f4596b0__0__Slow.o: \
+ VTQ_DST7_DCT8_CORE_TB___024root__DepSet_h1f4596b0__0__Slow.cpp \
+ VTQ_DST7_DCT8_CORE_TB__pch.h VTQ_DST7_DCT8_CORE_TB___024root.h

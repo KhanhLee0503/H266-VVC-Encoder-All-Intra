@@ -327,6 +327,9 @@ localparam PARA_CTU_ID_LSB     =
 localparam PARA_CTU_ID_MSB     =
   PARA_CTU_ID_LSB + PARA_CTU_ID_WD - 1;
 
+assign O_CU_ID =
+  r_output_data[PARA_CU_ID_MSB:PARA_CU_ID_LSB];
+
 assign O_IS_LEAF =
   r_output_data[PARA_IS_LEAF_MSB:PARA_IS_LEAF_LSB];
 

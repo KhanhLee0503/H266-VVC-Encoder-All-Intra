@@ -1,0 +1,3 @@
+VTQ_DCT2_CORE_TB___024root__Slow.o: VTQ_DCT2_CORE_TB___024root__Slow.cpp \
+ VTQ_DCT2_CORE_TB__pch.h VTQ_DCT2_CORE_TB__Syms.h \
+ VTQ_DCT2_CORE_TB___024root.h
