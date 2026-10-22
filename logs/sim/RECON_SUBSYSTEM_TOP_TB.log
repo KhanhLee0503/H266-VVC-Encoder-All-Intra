@@ -1,0 +1,742 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Warning-MODDUP: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/CTU_RECON_EXPORT.sv:12:8: Duplicate declaration of module: 'CTU_RECON_EXPORT'
+   12 | module CTU_RECON_EXPORT #(
+      |        ^~~~~~~~~~~~~~~~
+                 /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_RECON_EXPORT.sv:12:8: ... Location of original declaration
+   12 | module CTU_RECON_EXPORT #(
+      |        ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:84:8: Cell pin connected by name with empty reference: 'O_VALID'
+   84 |       .O_VALID         (),
+      |        ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:86:8: Cell pin connected by name with empty reference: 'O_SIDE_INDEX'
+   86 |       .O_SIDE_INDEX    (),
+      |        ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:824:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  824 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:825:4: Cell pin connected by name with empty reference: 'O_DONE'
+  825 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:856:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  856 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:857:4: Cell pin connected by name with empty reference: 'O_DONE'
+  857 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:944:4: Cell pin connected by name with empty reference: 'O_MODE_VALID'
+  944 |   .O_MODE_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:945:4: Cell pin connected by name with empty reference: 'O_INTRA_PRED_ANGLE'
+  945 |   .O_INTRA_PRED_ANGLE(),
+      |    ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:947:4: Cell pin connected by name with empty reference: 'O_ANGLE_NEGATIVE'
+  947 |   .O_ANGLE_NEGATIVE(),
+      |    ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:948:4: Cell pin connected by name with empty reference: 'O_ANGLE_ZERO'
+  948 |   .O_ANGLE_ZERO(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:949:4: Cell pin connected by name with empty reference: 'O_REF_FILTER_FLAG'
+  949 |   .O_REF_FILTER_FLAG()
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:992:4: Cell pin connected by name with empty reference: 'O_COMPONENT_ID'
+  992 |   .O_COMPONENT_ID(),
+      |    ^~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:993:4: Cell pin connected by name with empty reference: 'O_MAPPED_MODE'
+  993 |   .O_MAPPED_MODE(),
+      |    ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:994:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  994 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:995:4: Cell pin connected by name with empty reference: 'O_DONE'
+  995 |   .O_DONE()
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1090:4: Cell pin connected by name with empty reference: 'O_BANK_VALID'
+ 1090 |   .O_BANK_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1093:4: Cell pin connected by name with empty reference: 'O_ALL_CANDIDATES_READY'
+ 1093 |   .O_ALL_CANDIDATES_READY(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1096:4: Cell pin connected by name with empty reference: 'O_RD_BUSY'
+ 1096 |   .O_RD_BUSY(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1247:4: Cell pin connected by name with empty reference: 'O_MAP_UPDATE_DONE'
+ 1247 |   .O_MAP_UPDATE_DONE(),
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:3:8: Filename 'INTRA_FILTERING_UNIT' does not match MODULE name: 'INTRA_REF_FILTER_UNIT'
+    3 | module INTRA_REF_FILTER_UNIT #(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:358:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  358 |   .O_BUSY                (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:441:4: Cell pin connected by name with empty reference: 'O_FULL'
+  441 |   .O_FULL     (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:442:4: Cell pin connected by name with empty reference: 'O_EMPTY'
+  442 |   .O_EMPTY    ()
+      |    ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:194:6: Cell pin connected by name with empty reference: 'O_TU_ID'
+  194 |     .O_TU_ID(),
+      |      ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:195:6: Cell pin connected by name with empty reference: 'O_TU_START'
+  195 |     .O_TU_START(),
+      |      ^~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:196:6: Cell pin connected by name with empty reference: 'O_TU_LAST'
+  196 |     .O_TU_LAST(),
+      |      ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:197:6: Cell pin connected by name with empty reference: 'O_VECTOR_LAST'
+  197 |     .O_VECTOR_LAST(),
+      |      ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:198:6: Cell pin connected by name with empty reference: 'O_COMPONENT'
+  198 |     .O_COMPONENT()
+      |      ^~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:272:6: Cell pin connected by name with empty reference: 'O_TU_ID'
+  272 |     .O_TU_ID(),
+      |      ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:273:6: Cell pin connected by name with empty reference: 'O_TU_START'
+  273 |     .O_TU_START(),
+      |      ^~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:274:6: Cell pin connected by name with empty reference: 'O_TU_LAST'
+  274 |     .O_TU_LAST(),
+      |      ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:275:6: Cell pin connected by name with empty reference: 'O_VECTOR_LAST'
+  275 |     .O_VECTOR_LAST(),
+      |      ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:276:6: Cell pin connected by name with empty reference: 'O_COMPONENT'
+  276 |     .O_COMPONENT()
+      |      ^~~~~~~~~~~
+%Warning-DECLFILENAME: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:12:8: Filename 'RECON_EXPORT_CONNECTED_TB' does not match MODULE name: 'RECON_SUBSYSTEM_TOP_TB'
+   12 | module RECON_SUBSYSTEM_TOP_TB;
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_CU_COMMIT_CONTROL.sv:186:40: Operator SHIFTR expects 9 bits on the LHS, but LHS's VARREF 'I_CU_WIDTH' generates 8 bits.
+                                                                                                                             : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut.u_commit'
+  186 |         r_expected_y <= 9'((I_CU_WIDTH >> 2) * I_CU_HEIGHT);
+      |                                        ^~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_CU_COMMIT_CONTROL.sv:187:40: Operator SHIFTR expects 9 bits on the LHS, but LHS's VARREF 'I_CU_WIDTH' generates 8 bits.
+                                                                                                                             : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut.u_commit'
+  187 |         r_expected_c <= 9'((I_CU_WIDTH >> 3) * (I_CU_HEIGHT >> 1));
+      |                                        ^~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_CU_COMMIT_CONTROL.sv:187:61: Operator SHIFTR expects 9 bits on the LHS, but LHS's VARREF 'I_CU_HEIGHT' generates 8 bits.
+                                                                                                                             : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut.u_commit'
+  187 |         r_expected_c <= 9'((I_CU_WIDTH >> 3) * (I_CU_HEIGHT >> 1));
+      |                                                             ^~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:243:43: Operator ADD expects 11 bits on the RHS, but RHS's REPLICATE generates 9 bits.
+                                                                                                                         : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  243 |     w_above_wr_addr = 10'(w_above_x_words + {4'b0000,I_RECON_X_BASE[6:2]});
+      |                                           ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:303:17: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's SEL generates 2 bits.
+                                                                                                                        : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  303 |       2'd1: if (!I_REF_H_EDGE_RD_ADDR[9:8])
+      |                 ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:305:17: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's SEL generates 2 bits.
+                                                                                                                        : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  305 |       2'd2: if (!I_REF_H_EDGE_RD_ADDR[9:8])
+      |                 ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:311:17: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's SEL generates 2 bits.
+                                                                                                                        : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  311 |       2'd1: if (!I_REF_V_EDGE_RD_ADDR[9:8])
+      |                 ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:313:17: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's SEL generates 2 bits.
+                                                                                                                        : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  313 |       2'd2: if (!I_REF_V_EDGE_RD_ADDR[9:8])
+      |                 ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:413:50: Operator EQ expects 8 bits on the LHS, but LHS's VARREF 'I_RECON_Y' generates 7 bits.
+                                                                                                                         : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  413 |     .I_ABOVE_WR_EN(w_writer_accept && (I_RECON_Y == (w_comp_height - 8'd1)) &&
+      |                                                  ^~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:424:53: Operator EQ expects 8 bits on the LHS, but LHS's SEL generates 5 bits.
+                                                                                                                         : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut'
+  424 |     .I_LEFT_WR_EN(w_v_wr_en && (I_RECON_X_BASE[6:2] == ((w_comp_width - 8'd1) >> 2))),
+      |                                                     ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:80:19: Signal is not used: 'E_START_READY'
+                                                                                  : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+   80 |   logic E_START=0,E_START_READY;
+      |                   ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:83:27: Signal is not used: 'E_DONE'
+                                                                                  : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+   83 |   logic E_VALID,E_READY=0,E_DONE,E_BUSY,E_ERROR;
+      |                           ^~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:83:34: Signal is not used: 'E_BUSY'
+                                                                                  : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+   83 |   logic E_VALID,E_READY=0,E_DONE,E_BUSY,E_ERROR;
+      |                                  ^~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:83:41: Signal is not used: 'E_ERROR'
+                                                                                  : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+   83 |   logic E_VALID,E_READY=0,E_DONE,E_BUSY,E_ERROR;
+      |                                         ^~~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:85:15: Signal is not used: 'E_MASK'
+                                                                                  : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+   85 |   logic [3:0] E_MASK;
+      |               ^~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:169:13: Bits of signal are not used: 'v'[31:16]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  169 |     integer v;
+      |             ^
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:290:53: Bits of signal are not used: 'pw'[31:13]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  290 |     input integer ox,input integer oy,input integer pw,input integer ph,
+      |                                                     ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:290:70: Bits of signal are not used: 'ph'[31:13]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  290 |     input integer ox,input integer oy,input integer pw,input integer ph,
+      |                                                                      ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:361:73: Bits of signal are not used: 'w'[31:8]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  361 |   task automatic start_cu(input integer x,input integer y,input integer w,input integer h);
+      |                                                                         ^
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:361:89: Bits of signal are not used: 'h'[31:8]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  361 |   task automatic start_cu(input integer x,input integer y,input integer w,input integer h);
+      |                                                                                         ^
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:521:39: Bits of signal are not used: 'comp'[31:2]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  521 |   task automatic read_v(input integer comp,input integer addr,input logic expected_valid,
+      |                                       ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:521:58: Bits of signal are not used: 'addr'[31:10]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  521 |   task automatic read_v(input integer comp,input integer addr,input logic expected_valid,
+      |                                                          ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:538:43: Bits of signal are not used: 'comp'[31:2]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  538 |   task automatic read_above(input integer comp,input integer addr,input logic expected_valid,
+      |                                           ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:538:62: Bits of signal are not used: 'addr'[31:10]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  538 |   task automatic read_above(input integer comp,input integer addr,input logic expected_valid,
+      |                                                              ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:555:42: Bits of signal are not used: 'comp'[31:2]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  555 |   task automatic read_left(input integer comp,input integer addr,input logic expected_valid,
+      |                                          ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:555:61: Bits of signal are not used: 'addr'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  555 |   task automatic read_left(input integer comp,input integer addr,input logic expected_valid,
+      |                                                             ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:572:42: Bits of signal are not used: 'comp'[31:2]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  572 |   task automatic check_map(input integer comp,input integer xu,input integer yu,
+      |                                          ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:572:61: Bits of signal are not used: 'xu'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  572 |   task automatic check_map(input integer comp,input integer xu,input integer yu,
+      |                                                             ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:572:78: Bits of signal are not used: 'yu'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  572 |   task automatic check_map(input integer comp,input integer xu,input integer yu,
+      |                                                                              ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:587:47: Bits of signal are not used: 'comp'[31:2]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  587 |   task automatic check_map_pair(input integer comp,input integer top_x,input integer top_y,
+      |                                               ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:587:66: Bits of signal are not used: 'top_x'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  587 |   task automatic check_map_pair(input integer comp,input integer top_x,input integer top_y,
+      |                                                                  ^~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:587:86: Bits of signal are not used: 'top_y'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  587 |   task automatic check_map_pair(input integer comp,input integer top_x,input integer top_y,
+      |                                                                                      ^~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:588:46: Bits of signal are not used: 'left_x'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  588 |                                input integer left_x,input integer left_y,
+      |                                              ^~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:588:67: Bits of signal are not used: 'left_y'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  588 |                                input integer left_x,input integer left_y,
+      |                                                                   ^~~~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:608:45: Bits of signal are not used: 'comp'[31:2]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  608 |   task automatic check_map_tl(input integer comp,input integer xu,input integer yu,
+      |                                             ^~~~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:608:64: Bits of signal are not used: 'xu'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  608 |   task automatic check_map_tl(input integer comp,input integer xu,input integer yu,
+      |                                                                ^~
+%Warning-UNUSEDSIGNAL: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:608:81: Bits of signal are not used: 'yu'[31:5]
+                                                                                   : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB'
+  608 |   task automatic check_map_tl(input integer comp,input integer xu,input integer yu,
+      |                                                                                 ^~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_CU_COMMIT_CONTROL.sv:55:22: Bits of signal are not used: 'w_word_col'[8:7]
+                                                                                                                             : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut.u_commit'
+   55 |   logic [8:0]        w_word_col, w_word_row;
+      |                      ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_CU_COMMIT_CONTROL.sv:55:34: Bits of signal are not used: 'w_word_row'[8:7]
+                                                                                                                             : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut.u_commit'
+   55 |   logic [8:0]        w_word_col, w_word_row;
+      |                                  ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_REF_STORE_WRITER.sv:22:54: Bits of signal are not used: 'I_RECON_X_BASE'[1:0]
+                                                                                                                            : ... note: In instance 'RECON_SUBSYSTEM_TOP_TB.dut.u_writer'
+   22 |   input [6:0]                                        I_RECON_X_BASE,
+      |                                                      ^~~~~~~~~~~~~~
+%Warning-BLKSEQ: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:161:14: Blocking assignment '=' in sequential logic process
+                                                                             : ... Suggest using delayed assignment '<='
+  161 |     tb_cycle = tb_cycle + 1;
+      |              ^
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:649:14: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  649 |     I_RESETN <= 1'b1;
+      |              ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:654:21: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  654 |     I_PICTURE_START <= 1'b1;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:656:21: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  656 |     I_PICTURE_START <= 1'b0;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:299:22: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  299 |       I_CTU_X_ORIGIN <= 13'(ox);
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:300:22: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  300 |       I_CTU_Y_ORIGIN <= 13'(oy);
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:301:23: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  301 |       I_PICTURE_WIDTH <= 13'(pw);
+      |                       ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:302:24: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  302 |       I_PICTURE_HEIGHT <= 13'(ph);
+      |                        ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:303:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  303 |       I_CTU_VALID_WIDTH <= 8'(vw);
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:304:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  304 |       I_CTU_VALID_HEIGHT <= 8'(vh);
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:305:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  305 |       I_CTU_START_VALID <= 1'b1;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:485:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  485 |       I_REF_H_EDGE_RD_EN <= 1'b1;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:486:36: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  486 |       I_REF_H_EDGE_RD_COMPONENT_ID <= 2'(comp);
+      |                                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:487:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  487 |       I_REF_H_EDGE_RD_ADDR <= 10'(addr);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:517:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  517 |       I_REF_H_EDGE_RD_EN <= 1'b0;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:525:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  525 |       I_REF_V_EDGE_RD_EN <= 1'b1;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:526:36: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  526 |       I_REF_V_EDGE_RD_COMPONENT_ID <= 2'(comp);
+      |                                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:527:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  527 |       I_REF_V_EDGE_RD_ADDR <= 10'(addr);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:534:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  534 |       I_REF_V_EDGE_RD_EN <= 1'b0;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:542:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  542 |       I_REF_ABOVE_RD_EN <= 1'b1;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:543:35: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  543 |       I_REF_ABOVE_RD_COMPONENT_ID <= 2'(comp);
+      |                                   ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:544:27: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  544 |       I_REF_ABOVE_RD_ADDR <= 10'(addr);
+      |                           ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:551:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  551 |       I_REF_ABOVE_RD_EN <= 1'b0;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:559:30: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  559 |       I_REF_LEFT_BOUND_RD_EN <= 1'b1;
+      |                              ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:560:40: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  560 |       I_REF_LEFT_BOUND_RD_COMPONENT_ID <= 2'(comp);
+      |                                        ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:561:32: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  561 |       I_REF_LEFT_BOUND_RD_ADDR <= 5'(addr);
+      |                                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:568:30: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  568 |       I_REF_LEFT_BOUND_RD_EN <= 1'b0;
+      |                              ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:576:36: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  576 |       I_REF_MAP_QUERY_COMPONENT_ID <= 2'(comp);
+      |                                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:577:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  577 |       I_REF_TOP_MAP_X_UNIT <= 5'(xu);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:578:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  578 |       I_REF_TOP_MAP_Y_UNIT <= 5'(yu);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:579:33: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  579 |       I_REF_TOP_MAP_QUERY_VALID <= 1'b1;
+      |                                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:583:33: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  583 |       I_REF_TOP_MAP_QUERY_VALID <= 1'b0;
+      |                                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:368:14: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  368 |       I_CU_X <= 7'(x); I_CU_Y <= 7'(y);
+      |              ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:368:31: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  368 |       I_CU_X <= 7'(x); I_CU_Y <= 7'(y);
+      |                               ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:369:18: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  369 |       I_CU_WIDTH <= 8'(w); I_CU_HEIGHT <= 8'(h);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:369:40: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  369 |       I_CU_WIDTH <= 8'(w); I_CU_HEIGHT <= 8'(h);
+      |                                        ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:370:18: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  370 |       I_CU_VALID <= 1'b1;
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:386:27: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  386 |       I_CU_REF_COMMIT_REQ <= 1'b1;
+      |                           ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:403:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  403 |       I_RECON_COMPONENT_ID <= 2'(comp);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:404:22: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  404 |       I_RECON_X_BASE <= 7'(x);
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:405:17: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  405 |       I_RECON_Y <= 7'(y);
+      |                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:406:22: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  406 |       I_RECON_SAMPLE <= recon_word(comp,abs_x,abs_y);
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:407:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  407 |       I_RECON_LANE_VALID <= 4'b1111;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:408:23: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  408 |       I_RECON_TU_LAST <= last;
+      |                       ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:409:21: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  409 |       I_RECON_VALID <= 1'b1;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:461:20: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  461 |       I_CU_RELEASE <= 1'b1;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:463:20: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  463 |       I_CU_RELEASE <= 1'b0;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:464:27: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  464 |       I_CU_REF_COMMIT_REQ <= 1'b0;
+      |                           ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:592:36: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  592 |       I_REF_MAP_QUERY_COMPONENT_ID <= 2'(comp);
+      |                                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:593:33: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  593 |       I_REF_TOP_MAP_QUERY_VALID <= 1'b1;
+      |                                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:594:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  594 |       I_REF_TOP_MAP_X_UNIT <= 5'(top_x);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:595:28: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  595 |       I_REF_TOP_MAP_Y_UNIT <= 5'(top_y);
+      |                            ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:596:34: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  596 |       I_REF_LEFT_MAP_QUERY_VALID <= 1'b1;
+      |                                  ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:597:29: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  597 |       I_REF_LEFT_MAP_X_UNIT <= 5'(left_x);
+      |                             ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:598:29: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  598 |       I_REF_LEFT_MAP_Y_UNIT <= 5'(left_y);
+      |                             ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:603:33: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  603 |       I_REF_TOP_MAP_QUERY_VALID <= 1'b0;
+      |                                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:604:34: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  604 |       I_REF_LEFT_MAP_QUERY_VALID <= 1'b0;
+      |                                  ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:612:36: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  612 |       I_REF_MAP_QUERY_COMPONENT_ID <= 2'(comp);
+      |                                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:613:32: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  613 |       I_REF_TL_MAP_QUERY_VALID <= 1'b1;
+      |                                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:614:27: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  614 |       I_REF_TL_MAP_X_UNIT <= 5'(xu);
+      |                           ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:615:27: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  615 |       I_REF_TL_MAP_Y_UNIT <= 5'(yu);
+      |                           ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:620:32: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  620 |       I_REF_TL_MAP_QUERY_VALID <= 1'b0;
+      |                                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:688:15: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  688 |       E_CTU_ID<=9'd7;E_W<=8'd8;E_H<=8'd8;E_START<=1;
+      |               ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:688:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  688 |       E_CTU_ID<=9'd7;E_W<=8'd8;E_H<=8'd8;E_START<=1;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:688:35: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  688 |       E_CTU_ID<=9'd7;E_W<=8'd8;E_H<=8'd8;E_START<=1;
+      |                                   ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:688:49: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  688 |       E_CTU_ID<=9'd7;E_W<=8'd8;E_H<=8'd8;E_START<=1;
+      |                                                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:689:31: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  689 |       @(posedge I_CLK);E_START<=0;
+      |                               ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:710:16: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  710 |         E_READY<=((tmo%9)>=3);
+      |                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:714:31: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  714 |       @(posedge I_CLK);E_READY<=0;
+      |                               ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:342:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  342 |       I_CTU_FINISH_VALID <= 1'b1;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:266:16: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  266 |       I_RESETN <= 1'b0;
+      |                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:267:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  267 |       I_CTU_START_VALID <= 1'b0;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:268:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  268 |       I_CTU_FINISH_VALID <= 1'b0;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:269:18: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  269 |       I_CU_VALID <= 1'b0;
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:270:27: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  270 |       I_CU_REF_COMMIT_REQ <= 1'b0;
+      |                           ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:271:20: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  271 |       I_CU_RELEASE <= 1'b0;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:272:21: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  272 |       I_RECON_VALID <= 1'b0;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:273:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  273 |       I_REF_H_EDGE_RD_EN <= 1'b0;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:274:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  274 |       I_REF_V_EDGE_RD_EN <= 1'b0;
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:275:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  275 |       I_REF_ABOVE_RD_EN <= 1'b0;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:276:30: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  276 |       I_REF_LEFT_BOUND_RD_EN <= 1'b0;
+      |                              ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:277:33: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  277 |       I_REF_TOP_MAP_QUERY_VALID <= 1'b0;
+      |                                 ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:278:34: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  278 |       I_REF_LEFT_MAP_QUERY_VALID <= 1'b0;
+      |                                  ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:279:32: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  279 |       I_REF_TL_MAP_QUERY_VALID <= 1'b0;
+      |                                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:281:16: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  281 |       I_RESETN <= 1'b1;
+      |                ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:283:23: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  283 |       I_PICTURE_START <= 1'b1;
+      |                       ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:285:23: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  285 |       I_PICTURE_START <= 1'b0;
+      |                       ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:628:39: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  628 |       I_REF_CORNER_QUERY_COMPONENT_ID <= 2'(comp);
+      |                                       ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:784:19: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  784 |     I_RECON_VALID <= 1'b1;
+      |                   ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:785:26: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  785 |     I_RECON_COMPONENT_ID <= 2'd1;  
+      |                          ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:786:20: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  786 |     I_RECON_X_BASE <= 7'd0;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:787:15: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  787 |     I_RECON_Y <= 7'd0;
+      |               ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:788:24: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  788 |     I_RECON_LANE_VALID <= 4'b1111;
+      |                        ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:789:21: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  789 |     I_RECON_TU_LAST <= 1'b0;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:790:20: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  790 |     I_RECON_SAMPLE <= 40'd0;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:793:19: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  793 |     I_RECON_VALID <= 1'b0;
+      |                   ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:798:19: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  798 |     I_CLEAR_ERROR <= 1'b1;
+      |                   ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:799:25: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  799 |     I_CU_REF_COMMIT_REQ <= 1'b0;
+      |                         ^~
+%Warning-INITIALDLY: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:801:19: Non-blocking assignment '<=' in initial/final block
+                                                                                 : ... This will be executed as a blocking assignment '='!
+  801 |     I_CLEAR_ERROR <= 1'b0;
+      |                   ^~
+%Warning-SYNCASYNCNET: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:14:9: Signal flopped as both synchronous and async: 'RECON_SUBSYSTEM_TOP_TB.I_RESETN'
+                       /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_RECON_EXPORT.sv:102:10: ... Location of async usage
+  102 |     if (!I_RESETN) begin
+      |          ^~~~~~~~
+                       ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:130:9: ... Location of sync usage
+  130 |     if (I_RESETN) begin
+      |         ^~~~~~~~
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/RECON_SUBSYSTEM_TOP_TB'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -x c++-header VRECON_SUBSYSTEM_TOP_TB__pch.h -o VRECON_SUBSYSTEM_TOP_TB__pch.h.fast.gch
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.fast -c -o VRECON_SUBSYSTEM_TOP_TB.o VRECON_SUBSYSTEM_TOP_TB.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.fast -c -o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__0.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__0.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.fast -c -o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__1.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__1.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.fast -c -o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_hab58d704__0.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_hab58d704__0.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.fast -c -o VRECON_SUBSYSTEM_TOP_TB__main.o VRECON_SUBSYSTEM_TOP_TB__main.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.fast -c -o VRECON_SUBSYSTEM_TOP_TB__Trace__0.o VRECON_SUBSYSTEM_TOP_TB__Trace__0.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -x c++-header VRECON_SUBSYSTEM_TOP_TB__pch.h -o VRECON_SUBSYSTEM_TOP_TB__pch.h.slow.gch
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB__ConstPool_0.o VRECON_SUBSYSTEM_TOP_TB__ConstPool_0.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB___024root__Slow.o VRECON_SUBSYSTEM_TOP_TB___024root__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__0__Slow.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_hab58d704__0__Slow.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_hab58d704__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB__Syms.o VRECON_SUBSYSTEM_TOP_TB__Syms.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB__Trace__0__Slow.o VRECON_SUBSYSTEM_TOP_TB__Trace__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VRECON_SUBSYSTEM_TOP_TB__pch.h.slow -c -o VRECON_SUBSYSTEM_TOP_TB__TraceDecls__0__Slow.o VRECON_SUBSYSTEM_TOP_TB__TraceDecls__0__Slow.cpp
+echo "" > VRECON_SUBSYSTEM_TOP_TB__ALL.verilator_deplist.tmp
+Archive ar -rcs VRECON_SUBSYSTEM_TOP_TB__ALL.a VRECON_SUBSYSTEM_TOP_TB.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__0.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__1.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_hab58d704__0.o VRECON_SUBSYSTEM_TOP_TB__main.o VRECON_SUBSYSTEM_TOP_TB__Trace__0.o VRECON_SUBSYSTEM_TOP_TB__ConstPool_0.o VRECON_SUBSYSTEM_TOP_TB___024root__Slow.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_h4abd74c5__0__Slow.o VRECON_SUBSYSTEM_TOP_TB___024root__DepSet_hab58d704__0__Slow.o VRECON_SUBSYSTEM_TOP_TB__Syms.o VRECON_SUBSYSTEM_TOP_TB__Trace__0__Slow.o VRECON_SUBSYSTEM_TOP_TB__TraceDecls__0__Slow.o
+g++     verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o VRECON_SUBSYSTEM_TOP_TB__ALL.a    -pthread -lpthread -latomic   -o VRECON_SUBSYSTEM_TOP_TB
+rm VRECON_SUBSYSTEM_TOP_TB__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/RECON_SUBSYSTEM_TOP_TB'
+
+[TB][TC1] Empty reference RAM / availability guards
+[TB] CTU start (0,0), valid=128x8
+
+[TB][TC2] CU8x8: Y/Cb/Cr, commit, H/V, availability
+[TB][H_EDGE_TRACE] write Y addr=0 mask=1111 y=3 cycle=37
+[TB][H_EDGE_TRACE] write Y addr=32 mask=1111 y=7 cycle=53
+[TB] CU (0,0) 8x8 commit PASS
+[TB][EXPORT] Connected Recon Top -> Local RAM -> Export -> sink
+[1205000] %Fatal: RECON_EXPORT_CONNECTED_TB.sv:702: Assertion failed in TOP.RECON_SUBSYSTEM_TOP_TB.EXPORT_AFTER_CU8: [TB][EXPORT FAIL] beat=0 got data=005e00530048003d wanted=00320027001c0011
+%Error: ../01_tb/RECON_SUBSYSTEM/RECON_EXPORT_CONNECTED_TB.sv:702: Verilog $stop
+Aborting...

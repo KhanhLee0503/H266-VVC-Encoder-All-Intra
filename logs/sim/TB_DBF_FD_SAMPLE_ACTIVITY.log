@@ -1,0 +1,271 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Warning-MODDUP: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/CTU_RECON_EXPORT.sv:12:8: Duplicate declaration of module: 'CTU_RECON_EXPORT'
+   12 | module CTU_RECON_EXPORT #(
+      |        ^~~~~~~~~~~~~~~~
+                 /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/CTU_RECON_EXPORT.sv:12:8: ... Location of original declaration
+   12 | module CTU_RECON_EXPORT #(
+      |        ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:84:8: Cell pin connected by name with empty reference: 'O_VALID'
+   84 |       .O_VALID         (),
+      |        ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:86:8: Cell pin connected by name with empty reference: 'O_SIDE_INDEX'
+   86 |       .O_SIDE_INDEX    (),
+      |        ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:824:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  824 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:825:4: Cell pin connected by name with empty reference: 'O_DONE'
+  825 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:856:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  856 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:857:4: Cell pin connected by name with empty reference: 'O_DONE'
+  857 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:944:4: Cell pin connected by name with empty reference: 'O_MODE_VALID'
+  944 |   .O_MODE_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:945:4: Cell pin connected by name with empty reference: 'O_INTRA_PRED_ANGLE'
+  945 |   .O_INTRA_PRED_ANGLE(),
+      |    ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:947:4: Cell pin connected by name with empty reference: 'O_ANGLE_NEGATIVE'
+  947 |   .O_ANGLE_NEGATIVE(),
+      |    ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:948:4: Cell pin connected by name with empty reference: 'O_ANGLE_ZERO'
+  948 |   .O_ANGLE_ZERO(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:949:4: Cell pin connected by name with empty reference: 'O_REF_FILTER_FLAG'
+  949 |   .O_REF_FILTER_FLAG()
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:992:4: Cell pin connected by name with empty reference: 'O_COMPONENT_ID'
+  992 |   .O_COMPONENT_ID(),
+      |    ^~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:993:4: Cell pin connected by name with empty reference: 'O_MAPPED_MODE'
+  993 |   .O_MAPPED_MODE(),
+      |    ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:994:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  994 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:995:4: Cell pin connected by name with empty reference: 'O_DONE'
+  995 |   .O_DONE()
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1090:4: Cell pin connected by name with empty reference: 'O_BANK_VALID'
+ 1090 |   .O_BANK_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1093:4: Cell pin connected by name with empty reference: 'O_ALL_CANDIDATES_READY'
+ 1093 |   .O_ALL_CANDIDATES_READY(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1096:4: Cell pin connected by name with empty reference: 'O_RD_BUSY'
+ 1096 |   .O_RD_BUSY(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1247:4: Cell pin connected by name with empty reference: 'O_MAP_UPDATE_DONE'
+ 1247 |   .O_MAP_UPDATE_DONE(),
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:3:8: Filename 'INTRA_FILTERING_UNIT' does not match MODULE name: 'INTRA_REF_FILTER_UNIT'
+    3 | module INTRA_REF_FILTER_UNIT #(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:358:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  358 |   .O_BUSY                (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:441:4: Cell pin connected by name with empty reference: 'O_FULL'
+  441 |   .O_FULL     (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:442:4: Cell pin connected by name with empty reference: 'O_EMPTY'
+  442 |   .O_EMPTY    ()
+      |    ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:194:6: Cell pin connected by name with empty reference: 'O_TU_ID'
+  194 |     .O_TU_ID(),
+      |      ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:195:6: Cell pin connected by name with empty reference: 'O_TU_START'
+  195 |     .O_TU_START(),
+      |      ^~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:196:6: Cell pin connected by name with empty reference: 'O_TU_LAST'
+  196 |     .O_TU_LAST(),
+      |      ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:197:6: Cell pin connected by name with empty reference: 'O_VECTOR_LAST'
+  197 |     .O_VECTOR_LAST(),
+      |      ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:198:6: Cell pin connected by name with empty reference: 'O_COMPONENT'
+  198 |     .O_COMPONENT()
+      |      ^~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:272:6: Cell pin connected by name with empty reference: 'O_TU_ID'
+  272 |     .O_TU_ID(),
+      |      ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:273:6: Cell pin connected by name with empty reference: 'O_TU_START'
+  273 |     .O_TU_START(),
+      |      ^~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:274:6: Cell pin connected by name with empty reference: 'O_TU_LAST'
+  274 |     .O_TU_LAST(),
+      |      ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:275:6: Cell pin connected by name with empty reference: 'O_VECTOR_LAST'
+  275 |     .O_VECTOR_LAST(),
+      |      ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:276:6: Cell pin connected by name with empty reference: 'O_COMPONENT'
+  276 |     .O_COMPONENT()
+      |      ^~~~~~~~~~~
+%Warning-WIDTHTRUNC: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:189:32: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                     : ... note: In instance 'TB_DBF_FD_SAMPLE_ACTIVITY'
+  189 |             2: value=(col & 1) ? 1023 : 0;
+      |                                ^
+%Warning-WIDTHTRUNC: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:190:31: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's AND generates 32 bits.
+                                                                                     : ... note: In instance 'TB_DBF_FD_SAMPLE_ACTIVITY'
+  190 |             3: value=(ln & 1) ? 1023 : 0;
+      |                               ^
+%Warning-UNUSEDSIGNAL: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:181:22: Bits of signal are not used: 'value'[31:16]
+                                                                                       : ... note: In instance 'TB_DBF_FD_SAMPLE_ACTIVITY'
+  181 |     integer ln, col, value, i;
+      |                      ^~~~~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:266:10: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  266 |     rst_n<=1'b1;
+      |          ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:201:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  201 |       in_samples <= samples;
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:202:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  202 |       in_comp    <= 2'(comp);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:203:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  203 |       in_dir     <= 1'(index&1);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:204:23: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  204 |       in_group_enable <= index%3==0 ? 2'b01 : 2'b11;
+      |                       ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:205:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  205 |       in_sp0     <= 3'(sp0);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:206:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  206 |       in_sq0     <= 3'(sq0);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:207:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  207 |       in_sp1     <= 3'(sp1);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:208:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  208 |       in_sq1     <= 3'(sq1);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:209:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  209 |       in_bs0     <= 2'd2;
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:210:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  210 |       in_bs1     <= 2'(index&2);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:211:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  211 |       in_beta0   <= 16'(index*13);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:212:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  212 |       in_beta1   <= 16'(index*3);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:213:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  213 |       in_tc0     <= 16'(index+7);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:214:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  214 |       in_tc1     <= 16'(index+9);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:215:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  215 |       in_tag     <= 16'(index);
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:216:18: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  216 |       in_valid   <= 1'b1;
+      |                  ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:220:16: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  220 |       in_valid <= 1'b0;
+      |                ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:231:17: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  231 |       out_ready <= 1'b1;
+      |                 ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:233:17: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  233 |       out_ready <= 1'b0;
+      |                 ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:281:10: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  281 |     clear<=1'b1;
+      |          ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:283:10: Non-blocking assignment '<=' in initial/final block
+                                                                                     : ... This will be executed as a blocking assignment '='!
+  283 |     clear<=1'b0;
+      |          ^~
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/TB_DBF_FD_SAMPLE_ACTIVITY'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -x c++-header VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h -o VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast.gch
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY.o VTB_DBF_FD_SAMPLE_ACTIVITY.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__0.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__0.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__1.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__1.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__2.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__2.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__3.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__3.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__4.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__4.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__5.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__5.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_h7a691100__0.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_h7a691100__0.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY__main.o VTB_DBF_FD_SAMPLE_ACTIVITY__main.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.fast -c -o VTB_DBF_FD_SAMPLE_ACTIVITY__Trace__0.o VTB_DBF_FD_SAMPLE_ACTIVITY__Trace__0.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -x c++-header VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h -o VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow.gch
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY__ConstPool_0.o VTB_DBF_FD_SAMPLE_ACTIVITY__ConstPool_0.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_h7a691100__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_h7a691100__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY__Syms.o VTB_DBF_FD_SAMPLE_ACTIVITY__Syms.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY__Trace__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY__Trace__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include VTB_DBF_FD_SAMPLE_ACTIVITY__pch.h.slow -c -o VTB_DBF_FD_SAMPLE_ACTIVITY__TraceDecls__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY__TraceDecls__0__Slow.cpp
+echo "" > VTB_DBF_FD_SAMPLE_ACTIVITY__ALL.verilator_deplist.tmp
+Archive ar -rcs VTB_DBF_FD_SAMPLE_ACTIVITY__ALL.a VTB_DBF_FD_SAMPLE_ACTIVITY.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__0.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__1.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__2.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__3.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__4.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__5.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_h7a691100__0.o VTB_DBF_FD_SAMPLE_ACTIVITY__main.o VTB_DBF_FD_SAMPLE_ACTIVITY__Trace__0.o VTB_DBF_FD_SAMPLE_ACTIVITY__ConstPool_0.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_hf4c88114__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY___024root__DepSet_h7a691100__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY__Syms.o VTB_DBF_FD_SAMPLE_ACTIVITY__Trace__0__Slow.o VTB_DBF_FD_SAMPLE_ACTIVITY__TraceDecls__0__Slow.o
+g++     verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o VTB_DBF_FD_SAMPLE_ACTIVITY__ALL.a    -pthread -lpthread -latomic   -o VTB_DBF_FD_SAMPLE_ACTIVITY
+rm VTB_DBF_FD_SAMPLE_ACTIVITY__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/TB_DBF_FD_SAMPLE_ACTIVITY'
+[85000] %Fatal: TB_DBF_FD_SAMPLE_ACTIVITY.sv:219: Assertion failed in TOP.TB_DBF_FD_SAMPLE_ACTIVITY.run_one: Missing input handshake index=0
+%Error: ../01_tb/IN_LOOP_FILTERS/DBF/TB_DBF_FD_SAMPLE_ACTIVITY.sv:219: Verilog $stop
+Aborting...

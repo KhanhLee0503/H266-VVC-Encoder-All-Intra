@@ -1,0 +1,408 @@
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_AXI_READ_MASTER.sv:289:32: Missing newline at end of file (POSIX 3.206).
+                                                                                                                         : ... Suggest add newline.
+  289 | endmodule : CTU_AXI_READ_MASTER
+      |                                ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.020
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_FETCH_ENGINE.sv:692:29: Missing newline at end of file (POSIX 3.206).
+                                                                                                                      : ... Suggest add newline.
+  692 | endmodule : CTU_FETCH_ENGINE
+      |                             ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_OUTPUT_CONTROLLER.sv:100:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                           : ... Suggest add newline.
+  100 | endmodule : CTU_OUTPUT_CONTROLLER
+      |                                  ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_ISSUE_CONTROLLER.sv:94:38: Missing newline at end of file (POSIX 3.206).
+                                                                                                                              : ... Suggest add newline.
+   94 | endmodule : CTU_TASK_ISSUE_CONTROLLER
+      |                                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/CTU_TASK_SCHEDULER.sv:276:31: Missing newline at end of file (POSIX 3.206).
+                                                                                                                        : ... Suggest add newline.
+  276 | endmodule : CTU_TASK_SCHEDULER
+      |                               ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/CTU_INPUT_ENGINE/FIFO_SYNC.sv:75:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                              : ... Suggest add newline.
+   75 | endmodule : FIFO_SYNC
+      |                      ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:125:33: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                                     : ... Suggest add newline.
+  125 | endmodule: INTRA_REF_FILTER_UNIT
+      |                                 ^
+%Warning-EOFNEWLINE: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/PARTITION_ENGINE/PARTITION_CTU_META_REG.sv:174:34: Missing newline at end of file (POSIX 3.206).
+                                                                                                                            : ... Suggest add newline.
+  174 | endmodule: PARTITION_CTU_META_REG
+      |                                  ^
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_CODING_PARAMETER_GENERATOR.sv:491:6: Cell pin connected by name with empty reference: 'O_SCAN_DONE_CTU_ID'
+  491 |     .O_SCAN_DONE_CTU_ID    (),
+      |      ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_CODING_PARAMETER_GENERATOR.sv:492:6: Cell pin connected by name with empty reference: 'O_SCAN_DONE_BANK'
+  492 |     .O_SCAN_DONE_BANK      (),
+      |      ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_CODING_PARAMETER_GENERATOR.sv:493:6: Cell pin connected by name with empty reference: 'O_SCAN_DONE_DIRECTION'
+  493 |     .O_SCAN_DONE_DIRECTION (),
+      |      ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:84:8: Cell pin connected by name with empty reference: 'O_VALID'
+   84 |       .O_VALID         (),
+      |        ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/ANGULAR_PREDICTION_CORES/INTRA_ANGULAR_NEG_REF_EXTENSION.sv:86:8: Cell pin connected by name with empty reference: 'O_SIDE_INDEX'
+   86 |       .O_SIDE_INDEX    (),
+      |        ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:824:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  824 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:825:4: Cell pin connected by name with empty reference: 'O_DONE'
+  825 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:856:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  856 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:857:4: Cell pin connected by name with empty reference: 'O_DONE'
+  857 |   .O_DONE(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:944:4: Cell pin connected by name with empty reference: 'O_MODE_VALID'
+  944 |   .O_MODE_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:945:4: Cell pin connected by name with empty reference: 'O_INTRA_PRED_ANGLE'
+  945 |   .O_INTRA_PRED_ANGLE(),
+      |    ^~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:947:4: Cell pin connected by name with empty reference: 'O_ANGLE_NEGATIVE'
+  947 |   .O_ANGLE_NEGATIVE(),
+      |    ^~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:948:4: Cell pin connected by name with empty reference: 'O_ANGLE_ZERO'
+  948 |   .O_ANGLE_ZERO(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:949:4: Cell pin connected by name with empty reference: 'O_REF_FILTER_FLAG'
+  949 |   .O_REF_FILTER_FLAG()
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:992:4: Cell pin connected by name with empty reference: 'O_COMPONENT_ID'
+  992 |   .O_COMPONENT_ID(),
+      |    ^~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:993:4: Cell pin connected by name with empty reference: 'O_MAPPED_MODE'
+  993 |   .O_MAPPED_MODE(),
+      |    ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:994:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  994 |   .O_BUSY(),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:995:4: Cell pin connected by name with empty reference: 'O_DONE'
+  995 |   .O_DONE()
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1090:4: Cell pin connected by name with empty reference: 'O_BANK_VALID'
+ 1090 |   .O_BANK_VALID(),
+      |    ^~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1093:4: Cell pin connected by name with empty reference: 'O_ALL_CANDIDATES_READY'
+ 1093 |   .O_ALL_CANDIDATES_READY(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1096:4: Cell pin connected by name with empty reference: 'O_RD_BUSY'
+ 1096 |   .O_RD_BUSY(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_PREDICTION_ENGINE.sv:1247:4: Cell pin connected by name with empty reference: 'O_MAP_UPDATE_DONE'
+ 1247 |   .O_MAP_UPDATE_DONE(),
+      |    ^~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/INTRA_REF_SUBSYSTEM/INTRA_FILTERING_UNIT.sv:3:8: Filename 'INTRA_FILTERING_UNIT' does not match MODULE name: 'INTRA_REF_FILTER_UNIT'
+    3 | module INTRA_REF_FILTER_UNIT #(
+      |        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:358:4: Cell pin connected by name with empty reference: 'O_BUSY'
+  358 |   .O_BUSY                (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:441:4: Cell pin connected by name with empty reference: 'O_FULL'
+  441 |   .O_FULL     (),
+      |    ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INTRA_PREDICTION_ENGINE/SYNTAX_GEN/INTRA_SYNTAX_SUBSYSTEM.sv:442:4: Cell pin connected by name with empty reference: 'O_EMPTY'
+  442 |   .O_EMPTY    ()
+      |    ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:194:6: Cell pin connected by name with empty reference: 'O_TU_ID'
+  194 |     .O_TU_ID(),
+      |      ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:195:6: Cell pin connected by name with empty reference: 'O_TU_START'
+  195 |     .O_TU_START(),
+      |      ^~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:196:6: Cell pin connected by name with empty reference: 'O_TU_LAST'
+  196 |     .O_TU_LAST(),
+      |      ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:197:6: Cell pin connected by name with empty reference: 'O_VECTOR_LAST'
+  197 |     .O_VECTOR_LAST(),
+      |      ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:198:6: Cell pin connected by name with empty reference: 'O_COMPONENT'
+  198 |     .O_COMPONENT()
+      |      ^~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:272:6: Cell pin connected by name with empty reference: 'O_TU_ID'
+  272 |     .O_TU_ID(),
+      |      ^~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:273:6: Cell pin connected by name with empty reference: 'O_TU_START'
+  273 |     .O_TU_START(),
+      |      ^~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:274:6: Cell pin connected by name with empty reference: 'O_TU_LAST'
+  274 |     .O_TU_LAST(),
+      |      ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:275:6: Cell pin connected by name with empty reference: 'O_VECTOR_LAST'
+  275 |     .O_VECTOR_LAST(),
+      |      ^~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP.sv:276:6: Cell pin connected by name with empty reference: 'O_COMPONENT'
+  276 |     .O_COMPONENT()
+      |      ^~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/RECON_SUBSYSTEM/RECON_SUBSYSTEM_TOP.sv:352:6: Cell pin connected by name with empty reference: 'O_PREFETCH_ACTIVE'
+  352 |     .O_PREFETCH_ACTIVE(),
+      |      ^~~~~~~~~~~~~~~~~
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_METADATA_COLLECTOR.sv:87:27: Operator ASSIGNW expects 6 bits on the Assign RHS, but Assign RHS's ADD generates 7 bits.
+                                                                                                                                                : ... note: In instance 'DBF_CODING_PARAMETER_GENERATOR_TB.dut.u_metadata_collector'
+   87 |     assign w_width_limit  = ({1'b0, r_valid_width[7:2]} + {5'd0, (|r_valid_width[1:0])});
+      |                           ^
+%Warning-WIDTHTRUNC: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_METADATA_COLLECTOR.sv:88:27: Operator ASSIGNW expects 6 bits on the Assign RHS, but Assign RHS's ADD generates 7 bits.
+                                                                                                                                                : ... note: In instance 'DBF_CODING_PARAMETER_GENERATOR_TB.dut.u_metadata_collector'
+   88 |     assign w_height_limit = ({1'b0, r_valid_height[7:2]} + {5'd0, (|r_valid_height[1:0])});
+      |                           ^
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_METADATA_COLLECTOR.sv:96:44: Operator GTE expects 6 bits on the LHS, but LHS's VARREF 'I_LEAF_X_UNIT' generates 5 bits.
+                                                                                                                                                 : ... note: In instance 'DBF_CODING_PARAMETER_GENERATOR_TB.dut.u_metadata_collector'
+   96 |                             (I_LEAF_X_UNIT >= w_width_limit) ||
+      |                                            ^~
+%Warning-WIDTHEXPAND: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_METADATA_COLLECTOR.sv:97:44: Operator GTE expects 6 bits on the LHS, but LHS's VARREF 'I_LEAF_Y_UNIT' generates 5 bits.
+                                                                                                                                                 : ... note: In instance 'DBF_CODING_PARAMETER_GENERATOR_TB.dut.u_metadata_collector'
+   97 |                             (I_LEAF_Y_UNIT >= w_height_limit) ||
+      |                                            ^~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_EDGE_PARAMETER_CALCULATOR.sv:98:16: Bits of signal are not used: 'r_meta_p'[31:30,7:0]
+                                                                                                                                                         : ... note: In instance 'DBF_CODING_PARAMETER_GENERATOR_TB.dut.u_edge_parameter_calculator'
+   98 |   logic [31:0] r_meta_p;
+      |                ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_EDGE_PARAMETER_CALCULATOR.sv:99:16: Bits of signal are not used: 'r_meta_q'[31:30,7:0]
+                                                                                                                                                         : ... note: In instance 'DBF_CODING_PARAMETER_GENERATOR_TB.dut.u_edge_parameter_calculator'
+   99 |   logic [31:0] r_meta_q;
+      |                ^~~~~~~~
+%Warning-BLKSEQ: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:160:17: Blocking assignment '=' in sequential logic process
+                                                                                         : ... Suggest using delayed assignment '<='
+  160 |   always #5 clk = ~clk;
+      |                 ^
+%Warning-BLKSEQ: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:190:16: Blocking assignment '=' in sequential logic process
+                                                                                         : ... Suggest using delayed assignment '<='
+  190 |       observed = observed + 1;
+      |                ^
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:453:11: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  453 |     rst_n <= 1'b1;
+      |           ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:205:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  205 |     ctu_bank         <= bank;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:206:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  206 |     ctu_id           <= id;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:207:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  207 |     ctu_qp           <= 6'd28;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:208:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  208 |     ctu_qp_cb        <= 6'd26;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:209:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  209 |     ctu_qp_cr        <= 6'd30;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:210:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  210 |     ctu_width        <= width;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:211:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  211 |     ctu_height       <= height;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:212:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  212 |     ctu_dbf_enable   <= 1'b1;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:213:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  213 |     ctu_start_valid  <= 1'b1;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:225:21: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  225 |     ctu_start_valid <= 1'b0;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:237:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  237 |     leaf_ctu_id    <= id;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:238:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  238 |     leaf_cu_id     <= cu;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:239:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  239 |     leaf_x         <= x;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:240:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  240 |     leaf_y         <= y;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:241:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  241 |     leaf_wcode     <= wc;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:242:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  242 |     leaf_hcode     <= hc;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:243:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  243 |     leaf_valid     <= 1'b1;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:255:16: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  255 |     leaf_valid <= 1'b0;
+      |                ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:260:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  260 |     metadata_done_id <= id;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:261:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  261 |     metadata_done    <= 1'b1;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:264:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  264 |     metadata_done    <= 1'b0;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:273:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  273 |     scan_bank        <= bank;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:274:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  274 |     scan_ctu_id      <= id;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:275:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  275 |     scan_start_valid <= 1'b1;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:287:22: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  287 |     scan_start_valid <= 1'b0;
+      |                      ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:481:17: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  481 |     param_ready <= 1'b0;
+      |                 ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:501:17: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  501 |     param_ready <= 1'b1;
+      |                 ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:506:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  506 |     release_bank   <= 1'b0;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:507:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  507 |     release_ctu_id <= 9'd7;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:312:21: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  312 |     scan_done_ready <= 1'b1;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:322:21: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  322 |     scan_done_ready <= 1'b0;
+      |                     ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:341:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  341 |     release_bank   <= bank;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:342:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  342 |     release_ctu_id <= id;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:343:20: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  343 |     release_valid  <= 1'b1;
+      |                    ^~
+%Warning-INITIALDLY: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:356:19: Non-blocking assignment '<=' in initial/final block
+                                                                                             : ... This will be executed as a blocking assignment '='!
+  356 |     release_valid <= 1'b0;
+      |                   ^~
+%Warning-SYNCASYNCNET: ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:12:9: Signal flopped as both synchronous and async: 'DBF_CODING_PARAMETER_GENERATOR_TB.rst_n'
+                       /mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/00_src/IN_LOOP_FILTERS/DBF/CODING_PARAMETERS/DBF_CODING_PARAMETER_GENERATOR.sv:242:10: ... Location of async usage
+  242 |     if (!I_RST_N)
+      |          ^~~~~~~
+                       ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:145:9: ... Location of sync usage
+  145 |     if (rst_n) begin
+      |         ^~~~~
+make[1]: Entering directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/DBF_CODING_PARAMETER_GENERATOR_TB'
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+/usr/bin/python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VDBF_CODING_PARAMETER_GENERATOR_TB.cpp VDBF_CODING_PARAMETER_GENERATOR_TB___024root__DepSet_h7c6f8016__0.cpp VDBF_CODING_PARAMETER_GENERATOR_TB___024root__DepSet_h5ecd7ddf__0.cpp VDBF_CODING_PARAMETER_GENERATOR_TB__main.cpp VDBF_CODING_PARAMETER_GENERATOR_TB__Trace__0.cpp VDBF_CODING_PARAMETER_GENERATOR_TB__ConstPool_0.cpp VDBF_CODING_PARAMETER_GENERATOR_TB___024root__Slow.cpp VDBF_CODING_PARAMETER_GENERATOR_TB___024root__DepSet_h7c6f8016__0__Slow.cpp VDBF_CODING_PARAMETER_GENERATOR_TB___024root__DepSet_h5ecd7ddf__0__Slow.cpp VDBF_CODING_PARAMETER_GENERATOR_TB__Syms.cpp VDBF_CODING_PARAMETER_GENERATOR_TB__Trace__0__Slow.cpp VDBF_CODING_PARAMETER_GENERATOR_TB__TraceDecls__0__Slow.cpp > VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.o VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.cpp
+echo "" > VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.verilator_deplist.tmp
+Archive ar -rcs VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.a VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.o
+g++     verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.a    -pthread -lpthread -latomic   -o VDBF_CODING_PARAMETER_GENERATOR_TB
+rm VDBF_CODING_PARAMETER_GENERATOR_TB__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/c/SystemVerilog/H266_VVC/Design_All_Intra/02_sim/build/DBF_CODING_PARAMETER_GENERATOR_TB'
+[TB] CTU_START handshake bank=0 id=7 at 65000
+[TB] LEAF handshake ctu=7 cu=0 at 10315000
+[TB] LEAF handshake ctu=7 cu=1 at 10485000
+[TB] LEAF handshake ctu=7 cu=2 at 10575000
+[TB] METADATA_DONE sent ctu=7 at 10595000
+[TB] METADATA_READY bank=0 at 10665000
+[TB] SCAN_START handshake bank=0 id=7 at 10685000
+PASS #0 comp=0 direction=0 edge_id=0 x=16 y=0
+PASS #1 comp=0 direction=0 edge_id=1 x=16 y=4
+PASS #2 comp=0 direction=0 edge_id=2 x=16 y=8
+PASS #3 comp=0 direction=0 edge_id=3 x=16 y=12
+PASS #4 comp=1 direction=0 edge_id=0 x=8 y=0
+PASS #5 comp=1 direction=0 edge_id=1 x=8 y=2
+PASS #6 comp=1 direction=0 edge_id=2 x=8 y=4
+PASS #7 comp=1 direction=0 edge_id=3 x=8 y=6
+PASS #8 comp=2 direction=0 edge_id=0 x=8 y=0
+PASS #9 comp=2 direction=0 edge_id=1 x=8 y=2
+PASS #10 comp=2 direction=0 edge_id=2 x=8 y=4
+PASS #11 comp=2 direction=0 edge_id=3 x=8 y=6
+PASS #12 comp=0 direction=1 edge_id=0 x=16 y=8
+PASS #13 comp=0 direction=1 edge_id=1 x=20 y=8
+PASS #14 comp=0 direction=1 edge_id=2 x=24 y=8
+PASS #15 comp=0 direction=1 edge_id=3 x=28 y=8
+[TB] SCAN_DONE seen bank=0 id=7 at 12855000
+[TB] SCAN_DONE handshake bank=0 id=7 at 12875000
+[TB] RELEASE bank=0 id=7 complete at 12905000
+[TB] CTU_START handshake bank=1 id=8 at 12925000
+[TB] LEAF handshake ctu=8 cu=0 at 23175000
+[TB] METADATA_DONE sent ctu=8 at 23195000
+[TB] METADATA_READY bank=1 at 23345000
+[TB] SCAN_START handshake bank=1 id=8 at 23365000
+[TB] SCAN_DONE seen bank=1 id=8 at 24205000
+[TB] SCAN_DONE handshake bank=1 id=8 at 24225000
+[TB] RELEASE bank=1 id=8 complete at 24255000
+[TB] CTU_START handshake bank=0 id=9 at 24275000
+[TB] LEAF handshake ctu=9 cu=0 at 34525000
+[TB] LEAF handshake ctu=9 cu=1 at 34855000
+[TB] METADATA_DONE sent ctu=9 at 34875000
+[TB] SCAN_START handshake bank=0 id=9 at 35205000
+PASS #16 comp=0 direction=1 edge_id=0 x=0 y=16
+PASS #17 comp=0 direction=1 edge_id=1 x=4 y=16
+PASS #18 comp=0 direction=1 edge_id=2 x=8 y=16
+PASS #19 comp=0 direction=1 edge_id=3 x=12 y=16
+PASS #20 comp=0 direction=1 edge_id=4 x=16 y=16
+PASS #21 comp=0 direction=1 edge_id=5 x=20 y=16
+PASS #22 comp=0 direction=1 edge_id=6 x=24 y=16
+PASS #23 comp=0 direction=1 edge_id=7 x=28 y=16
+PASS #24 comp=1 direction=1 edge_id=0 x=0 y=8
+PASS #25 comp=1 direction=1 edge_id=1 x=2 y=8
+PASS #26 comp=1 direction=1 edge_id=2 x=4 y=8
+PASS #27 comp=1 direction=1 edge_id=3 x=6 y=8
+PASS #28 comp=1 direction=1 edge_id=4 x=8 y=8
+PASS #29 comp=1 direction=1 edge_id=5 x=10 y=8
+PASS #30 comp=1 direction=1 edge_id=6 x=12 y=8
+PASS #31 comp=1 direction=1 edge_id=7 x=14 y=8
+PASS #32 comp=2 direction=1 edge_id=0 x=0 y=8
+PASS #33 comp=2 direction=1 edge_id=1 x=2 y=8
+PASS #34 comp=2 direction=1 edge_id=2 x=4 y=8
+PASS #35 comp=2 direction=1 edge_id=3 x=6 y=8
+PASS #36 comp=2 direction=1 edge_id=4 x=8 y=8
+PASS #37 comp=2 direction=1 edge_id=5 x=10 y=8
+PASS #38 comp=2 direction=1 edge_id=6 x=12 y=8
+PASS #39 comp=2 direction=1 edge_id=7 x=14 y=8
+[TB] SCAN_DONE seen bank=0 id=9 at 37785000
+[TB] SCAN_DONE handshake bank=0 id=9 at 37805000
+[TB] RELEASE bank=0 id=9 complete at 37835000
+PASS: DBF_CODING_PARAMETER_GENERATOR Y/Cb/Cr integration, 40 edges + empty CTU + release
+- ../01_tb/IN_LOOP_FILTERS/DBF/DBF_CODING_PARAMETER_GENERATOR_TB.sv:568: Verilog $finish

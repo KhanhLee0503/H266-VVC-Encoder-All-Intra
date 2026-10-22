@@ -3,9 +3,9 @@ SHELL       := /bin/bash
 
 VERILATOR  			?= /usr/bin/verilator
 SURFER      			?= surfer
-TOP       			?= TQ_INVERSE_TRANSFORM_TOP
-SIM_TOP             		?= TQ_INVERSE_TRANSFORM_TOP_TB
-SIM_TB              		?= 01_tb/INV_TRANS_QUANT/TQ_INVERSE_TRANSFORM_TOP_TB.sv
+TOP       			?= DBF_UNIFIED_FILTER_CORE 
+SIM_TOP             		?= DBF_UNIFIED_FILTER_CORE_TB
+SIM_TB              		?= 01_tb/IN_LOOP_FILTERS/DBF/DBF_UNIFIED_FILTER_CORE_TB.sv
 RUN_ARGS            		?=
 RTL_DIR   			:= 00_src/
 FILE_LIST 			:= rtl.f

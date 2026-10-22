@@ -1,0 +1,37 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Constant pool
+//
+
+#include "verilated.h"
+
+extern const VlWide<8>/*255:0*/ VTB_DBF_CODING_PARAMETERS_TOP__ConstPool__CONST_h9e67c271_0 = {{
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000
+}};
+
+extern const VlWide<32>/*1023:0*/ VTB_DBF_CODING_PARAMETERS_TOP__ConstPool__CONST_hd6b7ba52_0 = {{
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000,
+    0x00000000, 0x00000000, 0x00000000, 0x00000000
+}};
+
+extern const VlUnpacked<CData/*4:0*/, 8> VTB_DBF_CODING_PARAMETERS_TOP__ConstPool__TABLE_h2fc43741_0 = {{
+    0x1fU, 0x1fU, 0x1fU, 0x1fU, 0x07U, 0x07U, 0x1fU, 0x1fU
+}};
+
+extern const VlUnpacked<CData/*0:0*/, 8> VTB_DBF_CODING_PARAMETERS_TOP__ConstPool__TABLE_h3007c8f8_0 = {{
+    0x00U, 0x00U, 0x00U, 0x01U, 0x01U, 0x01U, 0x00U, 0x00U
+}};
+
+extern const VlUnpacked<CData/*1:0*/, 8> VTB_DBF_CODING_PARAMETERS_TOP__ConstPool__TABLE_h7c15befd_0 = {{
+    0x00U, 0x01U, 0x02U, 0x00U, 0x01U, 0x02U, 0x00U, 0x00U
+}};
+
+extern const VlUnpacked<CData/*4:0*/, 8> VTB_DBF_CODING_PARAMETERS_TOP__ConstPool__TABLE_hf46811bb_0 = {{
+    0x1fU, 0x07U, 0x07U, 0x1fU, 0x1fU, 0x1fU, 0x1fU, 0x1fU
+}};
